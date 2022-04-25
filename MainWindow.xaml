@@ -18,6 +18,8 @@
         MinHeight="{StaticResource AppHeight}"
         GlowBrush="{StaticResource RgbM2}"
         WindowTitleBrush="{StaticResource RgbM1}"
+        Icon="{StaticResource Main}"
+        IconBitmapScalingMode="HighQuality"
         
         FontFamily="Roboto"
         mc:Ignorable="d">

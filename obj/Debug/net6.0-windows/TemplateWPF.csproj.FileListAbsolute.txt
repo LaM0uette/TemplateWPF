@@ -55,3 +55,6 @@ C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Configs\config.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Colors\Base.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\CurrentColors.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\App.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\CurrentImg.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Img\Base.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Img\Base\main\main.baml
