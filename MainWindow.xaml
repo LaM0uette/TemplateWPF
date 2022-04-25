@@ -6,11 +6,11 @@
         xmlns:views="clr-namespace:TemplateWPF.Views"
         xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
              
-        Title="TemplateWPF"
-        Width="1000"
-        MinWidth="1000"
-        Height="650"
-        MinHeight="650"
+        Title="{StaticResource AppName}"
+        Width="{StaticResource AppWidth}"
+        MinWidth="{StaticResource AppWidth}"
+        Height="{StaticResource AppHeight}"
+        MinHeight="{StaticResource AppHeight}"
         FontFamily="Roboto"
         
         TitleAlignment="Center"
