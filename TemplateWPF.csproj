@@ -13,7 +13,8 @@
 
     <ItemGroup>
       <Folder Include="Themes\Colors" />
-      <Folder Include="Themes\Styles" />
+      <Folder Include="Themes\Styles\Base\Pages" />
+      <Folder Include="Themes\Styles\Base\rsc" />
     </ItemGroup>
 
 </Project>

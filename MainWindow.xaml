@@ -24,6 +24,23 @@
         FontFamily="Roboto"
         mc:Ignorable="d">
         
+        <!-- Header -->
+        <!-- ButtonTitleBar -->
+        <mah:MetroWindow.WindowButtonCommands>
+                <mah:WindowButtonCommands 
+                        Minimize="Réduire"
+                        Maximize="Agrandir"
+                        Restore="Rétrécir"
+                        Close="Quitter"
+                        LightMinButtonStyle="{StaticResource MinButtonStyle}"
+                        LightMaxButtonStyle="{StaticResource MaxButtonStyle}"
+                        LightCloseButtonStyle="{StaticResource CloseButtonStyle}" 
+                        DarkMinButtonStyle="{StaticResource MinButtonStyle}"
+                        DarkMaxButtonStyle="{StaticResource MaxButtonStyle}"
+                        DarkCloseButtonStyle="{StaticResource CloseButtonStyle}" 
+                />
+        </mah:MetroWindow.WindowButtonCommands>
+        
         <views:MainView/>
     
 </mah:MetroWindow>
