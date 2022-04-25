@@ -41,6 +41,9 @@
                 />
         </mah:MetroWindow.WindowButtonCommands>
         
-        <views:MainView/>
+        <Grid Background="{StaticResource RgbM1}">
+                <views:MainView/>
+        </Grid>
+        
     
 </mah:MetroWindow>

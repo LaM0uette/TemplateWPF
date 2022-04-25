@@ -58,3 +58,10 @@ C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\App.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\CurrentImg.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Img\Base.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Img\Base\main\main.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\CurrentStyle.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Pages\body.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Pages\footer.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Pages\header.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Rsc\rsc.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\button.baml

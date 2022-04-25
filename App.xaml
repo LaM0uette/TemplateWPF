@@ -17,6 +17,7 @@
                 <!-- Themes -->
                 <ResourceDictionary Source="/Themes/CurrentColors.xaml"/>
                 <ResourceDictionary Source="/Themes/CurrentImg.xaml"/>
+                <ResourceDictionary Source="/Themes/CurrentStyle.xaml"/>
                 
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
