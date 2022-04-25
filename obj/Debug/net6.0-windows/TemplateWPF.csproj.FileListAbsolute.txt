@@ -51,3 +51,7 @@ C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\refint\TemplateWPF.dll
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\TemplateWPF.pdb
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\TemplateWPF.genruntimeconfig.cache
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\ref\TemplateWPF.dll
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Configs\config.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Colors\Base.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\CurrentColors.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\App.baml

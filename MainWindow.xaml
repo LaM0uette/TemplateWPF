@@ -5,19 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:views="clr-namespace:TemplateWPF.Views"
         xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-             
-        Title="{StaticResource AppName}"
-        Width="{StaticResource AppWidth}"
-        MinWidth="{StaticResource AppWidth}"
-        Height="{StaticResource AppHeight}"
-        MinHeight="{StaticResource AppHeight}"
-        FontFamily="Roboto"
         
         TitleAlignment="Center"
         ResizeMode="CanResizeWithGrip"
         WindowTransitionsEnabled="False"
         WindowStartupLocation="CenterScreen"
         
+        Title="{StaticResource AppName}"
+        Width="{StaticResource AppWidth}"
+        MinWidth="{StaticResource AppWidth}"
+        Height="{StaticResource AppHeight}"
+        MinHeight="{StaticResource AppHeight}"
+        GlowBrush="{DynamicResource RgbM2}"
+        WindowTitleBrush="{DynamicResource RgbM1}"
+        
+        FontFamily="Roboto"
         mc:Ignorable="d">
         
         <views:MainView/>

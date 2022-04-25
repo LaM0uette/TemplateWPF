@@ -14,6 +14,10 @@
                 <!-- Config -->
                 <ResourceDictionary Source="/Configs/config.xaml"/>
                 
+                <!-- Themes -->
+                <ResourceDictionary Source="/Themes/CurrentColors.xaml"/>
+                <ResourceDictionary Source="/Themes/CurrentImg.xaml"/>
+                
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
