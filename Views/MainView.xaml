@@ -7,7 +7,9 @@
     <Grid>
         
         <StackPanel>
+            
             <Label Style="{StaticResource LabelDemo}" Content="Buttons"/>
+            
             <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
                 <Button Style="{StaticResource ButtonPlainM1}" Width="200" Margin="5 0 5 5">RgbM1</Button>
                 <Button Style="{StaticResource ButtonPlainM2}" Width="200" Margin="5 0 5 5">RgbM2</Button>
