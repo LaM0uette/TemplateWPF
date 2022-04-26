@@ -67,3 +67,5 @@ C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Rsc\rsc.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\button.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\ButtonView.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\ButtonView.g.cs
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\DemoViews.g.cs
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\DemoViews.baml
