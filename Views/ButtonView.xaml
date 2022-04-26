@@ -7,12 +7,22 @@
     <Grid>
         
         <StackPanel>
+            <!-- Plain -->
             <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
-                <Button Style="{StaticResource ButtonPlainM1}" Width="150" Margin="5 0 5 5">RgbM1</Button>
-                <Button Style="{StaticResource ButtonPlainM2}" Width="150" Margin="5 0 5 5">RgbM2</Button>
-                <Button Style="{StaticResource ButtonPlainM3}" Width="150" Margin="5 0 5 5">RgbM3</Button>
-                <Button Style="{StaticResource ButtonPlainB1}" Width="150" Margin="5 0 5 5">RgbB1</Button>
-                <Button Style="{StaticResource ButtonPlainB2}" Width="150" Margin="5 0 5 5">RgbB2</Button>
+                <Button Style="{StaticResource ButtonPlainM1}" Width="150" Margin="5 0 5 5">PlainM1</Button>
+                <Button Style="{StaticResource ButtonPlainM2}" Width="150" Margin="5 0 5 5">PlainM2</Button>
+                <Button Style="{StaticResource ButtonPlainM3}" Width="150" Margin="5 0 5 5">PlainM3</Button>
+                <Button Style="{StaticResource ButtonPlainB1}" Width="150" Margin="5 0 5 5">PlainB1</Button>
+                <Button Style="{StaticResource ButtonPlainB2}" Width="150" Margin="5 0 5 5">PlainB2</Button>
+            </StackPanel>
+            
+            <!-- Txt -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <Button Style="{StaticResource ButtonTxtM1}" Width="150" Margin="5 0 5 5">TxtM1</Button>
+                <Button Style="{StaticResource ButtonTxtM2}" Width="150" Margin="5 0 5 5">TxtM2</Button>
+                <Button Style="{StaticResource ButtonTxtM3}" Width="150" Margin="5 0 5 5">TxtM3</Button>
+                <Button Style="{StaticResource ButtonTxtB1}" Width="150" Margin="5 0 5 5">TxtB1</Button>
+                <Button Style="{StaticResource ButtonTxtB2}" Width="150" Margin="5 0 5 5">TxtB2</Button>
             </StackPanel>
         </StackPanel>
         
