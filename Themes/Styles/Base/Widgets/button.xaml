@@ -7,13 +7,13 @@
         
         <Setter Property="Effect">
             <Setter.Value>
-                <DropShadowEffect Color="#FF242424" Direction="320" ShadowDepth="3" BlurRadius="4" Opacity="0.2" />
+                <DropShadowEffect Color="#FF242424" Direction="320" ShadowDepth="3" BlurRadius="4" Opacity="0.1" />
             </Setter.Value>
         </Setter>
         
         <Style.Triggers>
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Opacity" Value="0.8"/>
+                <Setter Property="Opacity" Value="0.6"/>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -119,5 +119,93 @@
         <Setter Property="Tag" Value="{StaticResource RgbB2}"/>
     </Style>
     <!-- /Txt -->
+    
+    
+    <!-- Txt Inv -->
+    <Style x:Key="ButtonTxtInv" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
+        <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
+        <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}"/>
+        <Setter Property="Foreground" Value="{StaticResource RgbAll}"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderThickness="1"
+                            BorderBrush="{TemplateBinding Tag}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource Mode=self}, Path=Tag}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ButtonTxtInvM1" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbM1}"/>
+    </Style>
+    
+    <Style x:Key="ButtonTxtInvM2" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
+    </Style>
+    
+    <Style x:Key="ButtonTxtInvM3" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbM3}"/>
+    </Style>
+    
+    <Style x:Key="ButtonTxtInvB1" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbB1}"/>
+    </Style>
+    
+    <Style x:Key="ButtonTxtInvB2" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbB2}"/>
+    </Style>
+    <!-- /Txt Inv -->
+    
+    
+    <!-- Dlg -->
+    <!--    Ok -->
+    <Style x:Key="ButtonDlgOk" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxt}">
+        <Setter Property="Tag" Value="{StaticResource RgbOk}"/>
+    </Style>
+    
+    <Style x:Key="ButtonDlgOkBis" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxt}">
+        <Setter Property="Tag" Value="{StaticResource RgbOkBis}"/>
+    </Style>
+    
+    <Style x:Key="ButtonDlgInvOk" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbOk}"/>
+    </Style>
+    
+    <Style x:Key="ButtonDlgInvOkBis" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbOkBis}"/>
+    </Style>
+    <!--    /Ok -->
+    
+    <!--    Nok -->
+    <Style x:Key="ButtonDlgNok" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxt}">
+        <Setter Property="Tag" Value="{StaticResource RgbNok}"/>
+    </Style>
+    
+    <Style x:Key="ButtonDlgNokBis" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxt}">
+        <Setter Property="Tag" Value="{StaticResource RgbNokBis}"/>
+    </Style>
+    
+    <Style x:Key="ButtonDlgInvNok" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbNok}"/>
+    </Style>
+    
+    <Style x:Key="ButtonDlgInvNokBis" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbNokBis}"/>
+    </Style>
+    <!--    /Nok -->
+    <!-- /Dlg -->
+    
     
 </ResourceDictionary>

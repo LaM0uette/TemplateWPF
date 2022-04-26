@@ -24,6 +24,31 @@
                 <Button Style="{StaticResource ButtonTxtB1}" Width="150" Margin="5 0 5 5">TxtB1</Button>
                 <Button Style="{StaticResource ButtonTxtB2}" Width="150" Margin="5 0 5 5">TxtB2</Button>
             </StackPanel>
+            
+            <!-- TxtInv -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <Button Style="{StaticResource ButtonTxtInvM1}" Width="150" Margin="5 0 5 5">TxtInvM1</Button>
+                <Button Style="{StaticResource ButtonTxtInvM2}" Width="150" Margin="5 0 5 5">TxtInvM2</Button>
+                <Button Style="{StaticResource ButtonTxtInvM3}" Width="150" Margin="5 0 5 5">TxtInvM3</Button>
+                <Button Style="{StaticResource ButtonTxtInvB1}" Width="150" Margin="5 0 5 5">TxtInvB1</Button>
+                <Button Style="{StaticResource ButtonTxtInvB2}" Width="150" Margin="5 0 5 5">TxtInvB2</Button>
+            </StackPanel>
+            
+            <!-- Dlg Ok -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <Button Style="{StaticResource ButtonDlgOk}" Width="150" Margin="5 0 5 5">DlgOk</Button>
+                <Button Style="{StaticResource ButtonDlgOkBis}" Width="150" Margin="5 0 5 5">DlgOkBis</Button>
+                <Button Style="{StaticResource ButtonDlgInvOk}" Width="150" Margin="5 0 5 5">DlgInvOk</Button>
+                <Button Style="{StaticResource ButtonDlgInvOkBis}" Width="150" Margin="5 0 5 5">DlgInvOkBis</Button>
+            </StackPanel>
+            
+            <!-- Dlg Nok -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <Button Style="{StaticResource ButtonDlgNok}" Width="150" Margin="5 0 5 5">DlgNok</Button>
+                <Button Style="{StaticResource ButtonDlgNokBis}" Width="150" Margin="5 0 5 5">DlgNokBis</Button>
+                <Button Style="{StaticResource ButtonDlgInvNok}" Width="150" Margin="5 0 5 5">DlgInvNok</Button>
+                <Button Style="{StaticResource ButtonDlgInvNokBis}" Width="150" Margin="5 0 5 5">DlgInvNokBis</Button>
+            </StackPanel>
         </StackPanel>
         
     </Grid>
