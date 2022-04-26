@@ -7,7 +7,7 @@
              mc:Ignorable="d">
     <Grid>
         
-        <StackPanel>
+        <StackPanel Background="#FF306666">
             <Label Style="{StaticResource LabelDemo}" Content="Buttons"/>
             <views:ButtonView/>
         </StackPanel>

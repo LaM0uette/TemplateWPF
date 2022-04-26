@@ -5,7 +5,8 @@
     <Color x:Key="CRgbM2">#FF8F8FA3</Color>
     <Color x:Key="CRgbM3">#FFFFFAFF</Color>
     <Color x:Key="CRgbB1">#FF44AAB8</Color>
-    <Color x:Key="CRgb2">#FFE53843</Color>
+    <Color x:Key="CRgbB2">#FFE53843</Color>
+    <Color x:Key="CRgbAll">#FF555870</Color>
     <Color x:Key="CRgbOk">#A1E510</Color>
     <Color x:Key="CRgbOkBis">#2DC8AB</Color>
     <Color x:Key="CRgbNok">#F11726</Color>
@@ -15,7 +16,8 @@
     <SolidColorBrush x:Key="RgbM2" Color="{StaticResource CRgbM2}"/>
     <SolidColorBrush x:Key="RgbM3" Color="{StaticResource CRgbM3}"/>
     <SolidColorBrush x:Key="RgbB1" Color="{StaticResource CRgbB1}"/>
-    <SolidColorBrush x:Key="RgbB2" Color="{StaticResource CRgb2}"/>
+    <SolidColorBrush x:Key="RgbB2" Color="{StaticResource CRgbB2}"/>
+    <SolidColorBrush x:Key="RgbAll" Color="{StaticResource CRgbAll}"/>
     <SolidColorBrush x:Key="RgbOk" Color="{StaticResource CRgbOk}"/>
     <SolidColorBrush x:Key="RgbOkBis" Color="{StaticResource CRgbOkBis}"/>
     <SolidColorBrush x:Key="RgbNok" Color="{StaticResource CRgbNok}"/>

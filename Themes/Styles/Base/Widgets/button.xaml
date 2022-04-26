@@ -10,6 +10,12 @@
                 <DropShadowEffect Color="#FF242424" Direction="320" ShadowDepth="3" BlurRadius="4" Opacity="0.2" />
             </Setter.Value>
         </Setter>
+        
+        <Style.Triggers>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Opacity" Value="0.8"/>
+            </Trigger>
+        </Style.Triggers>
     </Style>
     <!-- /Base -->
     
@@ -30,11 +36,7 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=self}, Path=Tag}"/>
-                            <Setter Property="Foreground" Value="{StaticResource RgbM1}"/>
-                        </Trigger>
-            
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Foreground" Value="{StaticResource RgbB1}"/>
+                            <Setter Property="Foreground" Value="{StaticResource RgbAll}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -74,7 +76,7 @@
     <!-- Txt -->
     <Style x:Key="ButtonTxt" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonBase}">
         <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
-        <Setter Property="Background" Value="{StaticResource RgbM1}"/>
+        <Setter Property="Background" Value="Transparent"/>
         <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}"/>
 
         <Setter Property="Template">
@@ -89,11 +91,7 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=self}, Path=Tag}"/>
-                            <Setter Property="Foreground" Value="{StaticResource RgbM1}"/>
-                        </Trigger>
-            
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Foreground" Value="{StaticResource RgbB1}"/>
+                            <Setter Property="Foreground" Value="{StaticResource RgbAll}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -102,28 +100,23 @@
     </Style>
     
     <Style x:Key="ButtonTxtM1" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxt}">
-        <Setter Property="Background" Value="{StaticResource RgbM1}"/>
-        <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
+        <Setter Property="Tag" Value="{StaticResource RgbM1}"/>
     </Style>
     
     <Style x:Key="ButtonTxtM2" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxt}">
-        <Setter Property="Background" Value="{StaticResource RgbM2}"/>
-        <Setter Property="Tag" Value="{StaticResource RgbM3}"/>
-    </Style>
-    
-    <Style x:Key="ButtonTxtM3" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxt}">
-        <Setter Property="Background" Value="{StaticResource RgbM3}"/>
         <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
     </Style>
     
-    <Style x:Key="ButtonTxtB1" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxt}">
-        <Setter Property="Background" Value="{StaticResource RgbB1}"/>
+    <Style x:Key="ButtonTxtM3" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxt}">
         <Setter Property="Tag" Value="{StaticResource RgbM3}"/>
     </Style>
     
+    <Style x:Key="ButtonTxtB1" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxt}">
+        <Setter Property="Tag" Value="{StaticResource RgbB1}"/>
+    </Style>
+    
     <Style x:Key="ButtonTxtB2" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonTxt}">
-        <Setter Property="Background" Value="{StaticResource RgbB2}"/>
-        <Setter Property="Tag" Value="{StaticResource RgbM3}"/>
+        <Setter Property="Tag" Value="{StaticResource RgbB2}"/>
     </Style>
     <!-- /Txt -->
     
