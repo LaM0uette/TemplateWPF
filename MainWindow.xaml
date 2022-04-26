@@ -5,12 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:views="clr-namespace:TemplateWPF.Views"
         xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-        
         TitleAlignment="Center"
         ResizeMode="CanResizeWithGrip"
         WindowTransitionsEnabled="False"
         WindowStartupLocation="CenterScreen"
-        
         Title="{StaticResource AppName}"
         Width="{StaticResource AppWidth}"
         MinWidth="{StaticResource AppWidth}"
@@ -18,11 +16,9 @@
         MinHeight="{StaticResource AppHeight}"
         GlowBrush="{StaticResource RgbM2}"
         WindowTitleBrush="{StaticResource RgbM1}"
-        Icon="{StaticResource Main}"
-        IconBitmapScalingMode="HighQuality"
-        
         FontFamily="Roboto"
         mc:Ignorable="d">
+        
         
         <!-- Header -->
         <mah:MetroWindow.WindowButtonCommands>
@@ -39,6 +35,20 @@
                         DarkCloseButtonStyle="{StaticResource CloseButtonStyle}" 
                 />
         </mah:MetroWindow.WindowButtonCommands>
+        <!-- Header Icon -->
+        <mah:MetroWindow.IconTemplate>
+                <DataTemplate>
+                        <Grid Width="20"
+                              Height="20"
+                              Margin="5"
+                              Background="Transparent"
+                              RenderOptions.EdgeMode="Unspecified"
+                              RenderOptions.BitmapScalingMode="HighQuality">
+                                <Image Source="{StaticResource Main}"></Image>
+                        </Grid>
+                </DataTemplate>
+        </mah:MetroWindow.IconTemplate>
+        
         
         <!-- Body -->
         <Grid Background="{StaticResource RgbM1}">
