@@ -8,6 +8,7 @@
     <Grid>
         
         <StackPanel>
+            <Label Style="{StaticResource LabelDemo}" Content="Buttons"/>
             <views:ButtonView/>
         </StackPanel>
         
