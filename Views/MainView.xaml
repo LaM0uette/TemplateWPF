@@ -4,12 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:views="clr-namespace:TemplateWPF.Views"
+             xmlns:demoViews="clr-namespace:TemplateWPF.Views.Demo"
              mc:Ignorable="d">
     <Grid>
         
         <StackPanel Background="SlateGray">
             <Label Style="{StaticResource LabelDemo}" Content="Buttons"/>
-            <views:ButtonView/>
+            <demoViews:ButtonView/>
         </StackPanel>
         
     </Grid>
