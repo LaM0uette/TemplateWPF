@@ -18,6 +18,8 @@
         GlowBrush="{StaticResource RgbM2}"
         WindowTitleBrush="{StaticResource RgbM1}"
         FontFamily="Roboto"
+        FontSize="15"
+        FontWeight="Bold"
         mc:Ignorable="d">
         
         
