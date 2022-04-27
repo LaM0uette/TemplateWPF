@@ -12,7 +12,7 @@
             <demoViews:ButtonView/>
             
             <Label Style="{StaticResource LabelDemo}" Content="CheckBox"/>
-            <demoViews:ButtonView/>
+            <demoViews:CheckBoxView/>
         </StackPanel>
         
     </Grid>
