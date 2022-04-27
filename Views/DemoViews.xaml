@@ -10,6 +10,9 @@
         <StackPanel Background="SlateGray">
             <Label Style="{StaticResource LabelDemo}" Content="Buttons"/>
             <demoViews:ButtonView/>
+            
+            <Label Style="{StaticResource LabelDemo}" Content="CheckBox"/>
+            <demoViews:ButtonView/>
         </StackPanel>
         
     </Grid>
