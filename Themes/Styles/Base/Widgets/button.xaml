@@ -15,8 +15,7 @@
             <EventTrigger RoutedEvent="Button.MouseEnter">
                 <BeginStoryboard>
                     <Storyboard>
-                        <DoubleAnimation 
-                            Storyboard.TargetProperty="(Button.Opacity)" From="0.5" To="1" Duration="0:0:0.2" FillBehavior="Stop"/> 
+                        <DoubleAnimation Storyboard.TargetProperty="(Button.Opacity)" From="0.5" To="1" Duration="0:0:0.2" FillBehavior="Stop"/> 
                     </Storyboard>
                 </BeginStoryboard>
             </EventTrigger>
