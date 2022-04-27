@@ -16,19 +16,15 @@
                 <BeginStoryboard>
                     <Storyboard>
                         <DoubleAnimation 
-                            Storyboard.TargetProperty="(Button.Opacity)" From="0.5" To="1" Duration="0:0:0.2"/> 
+                            Storyboard.TargetProperty="(Button.Opacity)" From="0.5" To="1" Duration="0:0:0.2" FillBehavior="Stop"/> 
                     </Storyboard>
                 </BeginStoryboard>
             </EventTrigger>
             
-            <EventTrigger RoutedEvent="Button.Click">
-                <BeginStoryboard>
-                    <Storyboard>
-                        <DoubleAnimation 
-                            Storyboard.TargetProperty="(Button.Opacity)" From="1" To="0.5" Duration="0:0:0.1" AutoReverse="True"/> 
-                    </Storyboard>
-                </BeginStoryboard>
-            </EventTrigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Opacity" Value="0.4"/>
+            </Trigger>
+            
         </Style.Triggers>
     </Style>
     <!-- /Base -->
