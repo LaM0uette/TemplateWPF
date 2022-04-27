@@ -13,6 +13,7 @@
         
         <!-- Widgets -->
         <ResourceDictionary Source="/Themes/Styles/Base/Widgets/button.xaml"/>
+        <ResourceDictionary Source="/Themes/Styles/Base/Widgets/checkBox.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>
