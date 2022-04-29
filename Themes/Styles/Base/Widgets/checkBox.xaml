@@ -26,7 +26,7 @@
                                             Background="{TemplateBinding Background}"
                                             BorderThickness="1"
                                             BorderBrush="{TemplateBinding Foreground}">
-                                <Image Style="{StaticResource ImgCheck}"></Image>
+                                <Image x:Name="CheckMark" Style="{StaticResource ImgCheckB1}"></Image>
                             </Border>
                         </BulletDecorator.Bullet>
                         <ContentPresenter Margin="4,0,0,0"
@@ -37,17 +37,17 @@
                     </BulletDecorator>
                     
                     <ControlTemplate.Triggers>
-                        <!-- <Trigger Property="IsChecked" Value="False"> -->
-                        <!--     <Setter TargetName="CheckMark" Property="Visibility" Value="Collapsed"/> -->
-                        <!-- </Trigger> -->
-                        <!-- -->
+                        <Trigger Property="IsChecked" Value="False">
+                            <Setter TargetName="CheckMark" Property="Visibility" Value="Collapsed"/>
+                        </Trigger>
+                        
                         <!-- <Trigger Property="IsChecked" Value="{x:Null}"> -->
                         <!--     <Setter TargetName="CheckMark" Property="Data" Value="M 0 7 L 7 0" /> -->
                         <!-- </Trigger> -->
                         
-                        <Trigger Property="IsMouseOver" Value="true">
-                            <Setter TargetName="Border" Property="Background" Value="IndianRed" />
-                        </Trigger>
+                        <!-- <Trigger Property="IsMouseOver" Value="true"> -->
+                        <!--     <Setter TargetName="Border" Property="Background" Value="IndianRed" /> -->
+                        <!-- </Trigger> -->
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
