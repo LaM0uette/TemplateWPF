@@ -16,7 +16,7 @@
     
     <!-- Plain -->
     <Style x:Key="CheckBoxPlain" TargetType="CheckBox" BasedOn="{StaticResource CheckBoxBase}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckM3}"/>
+        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
         <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
         <Setter Property="IsThreeState" Value="True"></Setter>
@@ -58,7 +58,7 @@
                         
                         <Trigger Property="IsChecked" Value="{x:Null}">
                             <Setter TargetName="Border" Property="Background" Value="Transparent"/>
-                            <Setter TargetName="CheckMark" Property="Style" Value="{StaticResource ImgCheckIndeterminateM2}" />
+                            <Setter TargetName="CheckMark" Property="Style" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Tag}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
