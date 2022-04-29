@@ -10,9 +10,9 @@
     
     <!-- Plain -->
     <Style x:Key="CheckBoxPlain" TargetType="CheckBox" BasedOn="{StaticResource CheckBoxBase}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckB1}"/>
-        <Setter Property="Background" Value="{StaticResource RgbM2}"/>
-        <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
+        <Setter Property="Tag" Value="{StaticResource ImgCheckOk}"/>
+        <Setter Property="Background" Value="{StaticResource RgbM1}"/>
+        <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource Self}, Path=Background}"/>
         
         <Setter Property="Template">
             <Setter.Value>
@@ -25,15 +25,14 @@
                                             CornerRadius="{DynamicResource RscRoundTiny}" 
                                             Background="{TemplateBinding Background}"
                                             BorderThickness="1"
-                                            BorderBrush="{TemplateBinding Foreground}">
+                                            BorderBrush="{TemplateBinding Background}">
                                 <Image x:Name="CheckMark" Style="{TemplateBinding Tag}"></Image>
                             </Border>
                         </BulletDecorator.Bullet>
-                        <ContentPresenter Margin="4,0,0,0"
+                        <ContentPresenter Margin="5,0,0,0"
                                           VerticalAlignment="Center"
                                           HorizontalAlignment="Left"
                                           RecognizesAccessKey="True"/>
-                        
                     </BulletDecorator>
                     
                     <ControlTemplate.Triggers>
@@ -44,10 +43,6 @@
                         
                         <!-- <Trigger Property="IsChecked" Value="{x:Null}"> -->
                         <!--     <Setter TargetName="CheckMark" Property="Data" Value="M 0 7 L 7 0" /> -->
-                        <!-- </Trigger> -->
-                        
-                        <!-- <Trigger Property="IsMouseOver" Value="true"> -->
-                        <!--     <Setter TargetName="Border" Property="Background" Value="IndianRed" /> -->
                         <!-- </Trigger> -->
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
