@@ -9,7 +9,11 @@
         <StackPanel>
             <!-- Plain -->
             <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
-                <CheckBox Width="150" Margin="5 0 5 5">Test</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxPlainM1}" Width="150" Margin="5 0 5 5">BoxPlainM1</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxPlainM2}" Width="150" Margin="5 0 5 5">BoxPlainM2</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxPlainM3}" Width="150" Margin="5 0 5 5">BoxPlainM3</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxPlainB1}" Width="150" Margin="5 0 5 5">BoxPlainB1</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxPlainB2}" Width="150" Margin="5 0 5 5">BoxPlainB2</CheckBox>
             </StackPanel>
         </StackPanel>
         
