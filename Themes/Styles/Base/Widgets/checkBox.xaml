@@ -19,7 +19,6 @@
         <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
         <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
-        <Setter Property="IsThreeState" Value="True"></Setter>
         
         <Setter Property="Template">
             <Setter.Value>
@@ -96,6 +95,27 @@
         <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM3}"/>
         <Setter Property="Background" Value="{StaticResource RgbB2}"/>
         <Setter Property="Foreground" Value="{StaticResource RgbM3}"/>
+    </Style>
+    
+    <!-- 3 States -->
+    <Style x:Key="CheckBox3SPlainM1" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxPlainM1}">
+        <Setter Property="IsThreeState" Value="True"></Setter>
+    </Style>
+    
+    <Style x:Key="CheckBox3SPlainM2" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxPlainM2}">
+        <Setter Property="IsThreeState" Value="True"></Setter>
+    </Style>
+    
+    <Style x:Key="CheckBox3SPlainM3" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxPlainM3}">
+        <Setter Property="IsThreeState" Value="True"></Setter>
+    </Style>
+    
+    <Style x:Key="CheckBox3SPlainB1" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxPlainB1}">
+        <Setter Property="IsThreeState" Value="True"></Setter>
+    </Style>
+    
+    <Style x:Key="CheckBox3SPlainB2" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxPlainB2}">
+        <Setter Property="IsThreeState" Value="True"></Setter>
     </Style>
     <!-- /Plain -->
     
