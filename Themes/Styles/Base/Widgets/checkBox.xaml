@@ -10,8 +10,8 @@
     
     <!-- Plain -->
     <Style x:Key="CheckBoxPlain" TargetType="CheckBox" BasedOn="{StaticResource CheckBoxBase}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckM1}"/>
-        <Setter Property="Background" Value="Aqua"/>
+        <Setter Property="Tag" Value="{StaticResource ImgCheckB1}"/>
+        <Setter Property="Background" Value="{StaticResource RgbM2}"/>
         <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
         
         <Setter Property="Template">

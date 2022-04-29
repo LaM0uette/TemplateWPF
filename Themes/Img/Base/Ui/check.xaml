@@ -80,4 +80,64 @@
         </Setter>
     </Style>
     
+    <Style x:Key="ImgCheckOk" TargetType="Image">
+        <Setter Property="Margin" Value="2"></Setter>
+        <Setter Property="Source">
+            <Setter.Value>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource RgbOk}" Geometry="{StaticResource GeoCheck}"/>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ImgCheckOkBis" TargetType="Image">
+        <Setter Property="Margin" Value="2"></Setter>
+        <Setter Property="Source">
+            <Setter.Value>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource RgbOkBis}" Geometry="{StaticResource GeoCheck}"/>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ImgCheckNok" TargetType="Image">
+        <Setter Property="Margin" Value="2"></Setter>
+        <Setter Property="Source">
+            <Setter.Value>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource RgbNok}" Geometry="{StaticResource GeoCheck}"/>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ImgCheckNokBis" TargetType="Image">
+        <Setter Property="Margin" Value="2"></Setter>
+        <Setter Property="Source">
+            <Setter.Value>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource RgbNokBis}" Geometry="{StaticResource GeoCheck}"/>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
 </ResourceDictionary>
