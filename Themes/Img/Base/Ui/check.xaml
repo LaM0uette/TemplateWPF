@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <DrawingImage x:Key="ImgCheck">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+	            <GeometryDrawing Brush="{StaticResource RgbM3}" Geometry="M64,15.5 28.9,50.6 28.9,50.6 22.9,56.6 0,33.8 8.2,25.6 22.9,40.3 55.8,7.4"/>
+	        </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    
+</ResourceDictionary>

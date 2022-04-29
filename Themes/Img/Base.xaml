@@ -2,7 +2,12 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     
     <ResourceDictionary.MergedDictionaries>
+        
+        <!-- Main -->
         <ResourceDictionary Source="/Themes/Img/Base/Main/main.xaml"/>
+        
+        <!-- Ui -->
+        <ResourceDictionary Source="/Themes/Img/Base/Ui/check.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>

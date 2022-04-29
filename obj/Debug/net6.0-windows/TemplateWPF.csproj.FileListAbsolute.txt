@@ -72,3 +72,4 @@ C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\DemoViews.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\CheckBoxView.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\CheckBoxView.g.cs
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\checkBox.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Img\Base\Ui\check.baml
