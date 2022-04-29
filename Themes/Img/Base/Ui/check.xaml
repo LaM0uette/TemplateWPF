@@ -3,8 +3,9 @@
     
     <!-- Geometry -->
     <Geometry x:Key="GeoCheck">M64,15.5 28.9,50.6 28.9,50.6 22.9,56.6 0,33.8 8.2,25.6 22.9,40.3 55.8,7.4</Geometry>
+    <Geometry x:Key="GeoCheckIndeterminate">M64,64</Geometry>
     
-    <!-- Img -->
+    <!-- Ckeck -->
     <Style x:Key="ImgCheckM1" TargetType="Image">
         <Setter Property="Margin" Value="2"></Setter>
         <Setter Property="Source">
@@ -139,5 +140,144 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <!-- /Ckeck -->
+    
+    
+    <!-- Ckeck Indeterminate -->
+    <Style x:Key="ImgCheckIndeterminateM1" TargetType="Image">
+        <Setter Property="Margin" Value="2"></Setter>
+        <Setter Property="Source">
+            <Setter.Value>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource RgbM1}" Geometry="{StaticResource GeoCheckIndeterminate}"/>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ImgCheckIndeterminateM2" TargetType="Image">
+        <Setter Property="Margin" Value="2"></Setter>
+        <Setter Property="Source">
+            <Setter.Value>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource RgbM2}" Geometry="{StaticResource GeoCheckIndeterminate}"/>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ImgCheckIndeterminateM3" TargetType="Image">
+        <Setter Property="Margin" Value="2"></Setter>
+        <Setter Property="Source">
+            <Setter.Value>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource RgbM3}" Geometry="{StaticResource GeoCheckIndeterminate}"/>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ImgCheckIndeterminateB1" TargetType="Image">
+        <Setter Property="Margin" Value="2"></Setter>
+        <Setter Property="Source">
+            <Setter.Value>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource RgbB1}" Geometry="{StaticResource GeoCheckIndeterminate}"/>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ImgCheckIndeterminateB2" TargetType="Image">
+        <Setter Property="Margin" Value="2"></Setter>
+        <Setter Property="Source">
+            <Setter.Value>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource RgbB2}" Geometry="{StaticResource GeoCheckIndeterminate}"/>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ImgCheckIndeterminateOk" TargetType="Image">
+        <Setter Property="Margin" Value="2"></Setter>
+        <Setter Property="Source">
+            <Setter.Value>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource RgbOk}" Geometry="{StaticResource GeoCheckIndeterminate}"/>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ImgCheckIndeterminateOkBis" TargetType="Image">
+        <Setter Property="Margin" Value="2"></Setter>
+        <Setter Property="Source">
+            <Setter.Value>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource RgbOkBis}" Geometry="{StaticResource GeoCheckIndeterminate}"/>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ImgCheckIndeterminateNok" TargetType="Image">
+        <Setter Property="Margin" Value="2"></Setter>
+        <Setter Property="Source">
+            <Setter.Value>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource RgbNok}" Geometry="{StaticResource GeoCheckIndeterminate}"/>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ImgCheckIndeterminateNokBis" TargetType="Image">
+        <Setter Property="Margin" Value="2"></Setter>
+        <Setter Property="Source">
+            <Setter.Value>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="{StaticResource RgbNokBis}" Geometry="{StaticResource GeoCheckIndeterminate}"/>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- /Ckeck -->
     
 </ResourceDictionary>

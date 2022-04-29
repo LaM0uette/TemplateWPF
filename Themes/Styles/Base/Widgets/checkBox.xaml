@@ -19,6 +19,7 @@
         <Setter Property="Tag" Value="{StaticResource ImgCheckM3}"/>
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
         <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
+        <Setter Property="IsThreeState" Value="True"></Setter>
         
         <Setter Property="Template">
             <Setter.Value>
@@ -34,7 +35,7 @@
                                         Height="16" 
                                         Margin="4 3 0 0"
                                         CornerRadius="{DynamicResource RscRound}">
-                                    <Image x:Name="CheckMark" Style="{TemplateBinding Tag}"/>
+                                    <Image x:Name="CheckMark" Style="{StaticResource ImgCheckM3}"/>
                                 </Border>
                             </BulletDecorator.Bullet>
                             <ContentPresenter HorizontalAlignment="Left"
@@ -43,10 +44,7 @@
                                               RecognizesAccessKey="True"
                                               SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                         </BulletDecorator>
-                        
                     </Border>
-                    
-                    
                     
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="False">
@@ -58,9 +56,10 @@
                             <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource RgbOk}"/>
                         </Trigger>
                         
-                        <!-- <Trigger Property="IsChecked" Value="{x:Null}"> -->
-                        <!--     <Setter TargetName="CheckMark" Property="Data" Value="M 0 7 L 7 0" /> -->
-                        <!-- </Trigger> -->
+                        <Trigger Property="IsChecked" Value="{x:Null}">
+                            <Setter TargetName="CheckMark" Property="Style" Value="{StaticResource ImgCheckIndeterminateM3}" />
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource RgbOk}"/>
+                        </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
