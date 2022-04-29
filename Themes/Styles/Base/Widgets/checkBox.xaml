@@ -10,30 +10,31 @@
     
     <!-- Plain -->
     <Style x:Key="CheckBoxPlain" TargetType="CheckBox" BasedOn="{StaticResource CheckBoxBase}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckOk}"/>
+        <Setter Property="Tag" Value="{StaticResource ImgCheckM3}"/>
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
-        <Setter Property="Foreground" Value="{StaticResource RgbM1}"/>
+        <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
         
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="CheckBox">
-                    <BulletDecorator Background="Aqua" SnapsToDevicePixels="True">
+                    <BulletDecorator Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
                         <BulletDecorator.Bullet>
                             <Border x:Name="Border" 
-                                    BorderBrush="{TemplateBinding Background}"
-                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding Foreground}"
+                                    Background="{TemplateBinding Tag}"
                                     BorderThickness="1"
                                     Width="16" 
                                     Height="16" 
-                                    Margin="2"
+                                    Margin="4 3 0 0"
                                     CornerRadius="{DynamicResource RscRoundTiny}">
                                 <Image x:Name="CheckMark" Style="{TemplateBinding Tag}"/>
                             </Border>
                         </BulletDecorator.Bullet>
-                        <ContentPresenter Margin="5,0,0,0"
+                        <ContentPresenter HorizontalAlignment="Left"
                                           VerticalAlignment="Center"
-                                          HorizontalAlignment="Left"
-                                          RecognizesAccessKey="True"/>
+                                          Margin="5 0 0 0"
+                                          RecognizesAccessKey="True"
+                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                     </BulletDecorator>
                     
                     <ControlTemplate.Triggers>
