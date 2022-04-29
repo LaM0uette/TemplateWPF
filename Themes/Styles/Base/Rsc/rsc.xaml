@@ -10,11 +10,4 @@
                   TopLeft="{StaticResource VRscRound}" 
                   TopRight="{StaticResource VRscRound}"/>
     
-    <sys:Double x:Key="VRscRoundTiny">2</sys:Double>
-    <CornerRadius x:Key="RscRoundTiny" 
-                  BottomLeft="{StaticResource VRscRoundTiny}" 
-                  BottomRight="{StaticResource VRscRoundTiny}" 
-                  TopLeft="{StaticResource VRscRoundTiny}" 
-                  TopRight="{StaticResource VRscRoundTiny}"/>
-    
 </ResourceDictionary>

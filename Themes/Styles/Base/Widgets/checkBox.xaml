@@ -4,6 +4,12 @@
     <Style x:Key="CheckBoxBase" TargetType="{x:Type CheckBox}">
         <Setter Property="Height" Value="{StaticResource WgHeight}"/>
         <Setter Property="Cursor" Value="Hand"/>
+        
+        <Style.Resources>
+            <Style TargetType="Border">
+                <Setter Property="CornerRadius" Value="{DynamicResource RscRound}"></Setter>
+            </Style>
+        </Style.Resources>
     </Style>
     <!-- /Base -->
     
@@ -21,18 +27,18 @@
                         <BulletDecorator.Bullet>
                             <Border x:Name="Border" 
                                     BorderBrush="{TemplateBinding Foreground}"
-                                    Background="{TemplateBinding Tag}"
+                                    Background="{StaticResource RgbOk}"
                                     BorderThickness="1"
                                     Width="16" 
                                     Height="16" 
                                     Margin="4 3 0 0"
-                                    CornerRadius="{DynamicResource RscRoundTiny}">
+                                    CornerRadius="{DynamicResource RscRound}">
                                 <Image x:Name="CheckMark" Style="{TemplateBinding Tag}"/>
                             </Border>
                         </BulletDecorator.Bullet>
                         <ContentPresenter HorizontalAlignment="Left"
                                           VerticalAlignment="Center"
-                                          Margin="5 0 0 0"
+                                          Margin="8 0 0 0"
                                           RecognizesAccessKey="True"
                                           SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                     </BulletDecorator>
@@ -41,6 +47,10 @@
                         <Trigger Property="IsChecked" Value="False">
                             <Setter TargetName="CheckMark" Property="Visibility" Value="Collapsed"/>
                             <Setter TargetName="Border" Property="Background" Value="Transparent"/>
+                        </Trigger>
+                        
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource RgbOk}"/>
                         </Trigger>
                         
                         <!-- <Trigger Property="IsChecked" Value="{x:Null}"> -->
