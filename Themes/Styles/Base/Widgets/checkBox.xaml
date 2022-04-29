@@ -10,8 +10,8 @@
     
     <!-- Plain -->
     <Style x:Key="CheckBoxPlain" TargetType="CheckBox" BasedOn="{StaticResource CheckBoxBase}">
-        <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
-        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Tag" Value="{StaticResource ImgCheckM1}"/>
+        <Setter Property="Background" Value="Aqua"/>
         <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
         
         <Setter Property="Template">
@@ -26,7 +26,7 @@
                                             Background="{TemplateBinding Background}"
                                             BorderThickness="1"
                                             BorderBrush="{TemplateBinding Foreground}">
-                                <Image x:Name="CheckMark" Style="{StaticResource ImgCheckB1}"></Image>
+                                <Image x:Name="CheckMark" Style="{TemplateBinding Tag}"></Image>
                             </Border>
                         </BulletDecorator.Bullet>
                         <ContentPresenter Margin="4,0,0,0"
@@ -39,6 +39,7 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="False">
                             <Setter TargetName="CheckMark" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="Border" Property="Background" Value="Transparent"/>
                         </Trigger>
                         
                         <!-- <Trigger Property="IsChecked" Value="{x:Null}"> -->
