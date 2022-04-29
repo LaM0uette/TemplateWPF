@@ -23,25 +23,30 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="CheckBox">
-                    <BulletDecorator Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
-                        <BulletDecorator.Bullet>
-                            <Border x:Name="Border" 
-                                    BorderBrush="{TemplateBinding Foreground}"
-                                    Background="{StaticResource RgbOk}"
-                                    BorderThickness="1"
-                                    Width="16" 
-                                    Height="16" 
-                                    Margin="4 3 0 0"
-                                    CornerRadius="{DynamicResource RscRound}">
-                                <Image x:Name="CheckMark" Style="{TemplateBinding Tag}"/>
-                            </Border>
-                        </BulletDecorator.Bullet>
-                        <ContentPresenter HorizontalAlignment="Left"
-                                          VerticalAlignment="Center"
-                                          Margin="8 0 0 0"
-                                          RecognizesAccessKey="True"
-                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
-                    </BulletDecorator>
+                    <Border Background="{TemplateBinding Background}">
+                        <BulletDecorator SnapsToDevicePixels="True">
+                            <BulletDecorator.Bullet>
+                                <Border x:Name="Border" 
+                                        BorderBrush="{TemplateBinding Foreground}"
+                                        Background="{StaticResource RgbOk}"
+                                        BorderThickness="1"
+                                        Width="16" 
+                                        Height="16" 
+                                        Margin="4 3 0 0"
+                                        CornerRadius="{DynamicResource RscRound}">
+                                    <Image x:Name="CheckMark" Style="{TemplateBinding Tag}"/>
+                                </Border>
+                            </BulletDecorator.Bullet>
+                            <ContentPresenter HorizontalAlignment="Left"
+                                              VerticalAlignment="Center"
+                                              Margin="8 0 0 0"
+                                              RecognizesAccessKey="True"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                        </BulletDecorator>
+                        
+                    </Border>
+                    
+                    
                     
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="False">
