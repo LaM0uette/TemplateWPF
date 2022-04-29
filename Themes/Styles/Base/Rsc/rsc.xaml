@@ -10,4 +10,7 @@
                   TopLeft="{StaticResource VRscRound}" 
                   TopRight="{StaticResource VRscRound}"/>
     
+    <!-- Dim -->
+    <!-- <sys:Double x:Key="WgHeight">25</sys:Double> -->
+    
 </ResourceDictionary>
