@@ -7,16 +7,17 @@
              mc:Ignorable="d">
     <Grid>
         
-        <StackPanel Background="SlateGray">
-            <Label Style="{StaticResource LabelDemo}" Content="Buttons"/>
-            <demoViews:ButtonView/>
+        <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Background="SlateGray" CanVerticallyScroll="True">
+                <Label Style="{StaticResource LabelDemo}" Content="Buttons"/>
+                <demoViews:ButtonView/>
             
-            <Label Style="{StaticResource LabelDemo}" Content="CheckBox"/>
-            <demoViews:CheckBoxView/>
+                <Label Style="{StaticResource LabelDemo}" Content="CheckBox"/>
+                <demoViews:CheckBoxView/>
             
-            <Label Style="{StaticResource LabelDemo}" Content="RadioButton"/>
-            <demoViews:RadioButtonView/>
-        </StackPanel>
-        
+                <Label Style="{StaticResource LabelDemo}" Content="RadioButton"/>
+                <demoViews:RadioButtonView/>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </UserControl>
