@@ -59,8 +59,6 @@
         </Setter>
     </Style>
     
-    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonPlain}"/>
-    
     <Style x:Key="ButtonPlainM1" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonPlain}">
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
         <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
@@ -222,6 +220,10 @@
     <!--    /Nok -->
     <!-- /Dlg -->
     
+    
+    <!-- INITIAL -->
+    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonPlain}"/>
+    <!-- /INITIAL -->
     
 </ResourceDictionary>
 

@@ -32,7 +32,7 @@
                                         Width="16" 
                                         Height="16" 
                                         Margin="4 3 0 0"
-                                        CornerRadius="{DynamicResource RscRound}">
+                                        CornerRadius="8">
                                     <Image x:Name="CheckMark" Style="{StaticResource ImgCheckM3}"/>
                                 </Border>
                             </BulletDecorator.Bullet>
@@ -58,8 +58,6 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
-    <Style TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlain}"/>
     
     <Style x:Key="RadioButtonPlainM1" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlain}">
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
@@ -106,7 +104,7 @@
                                         Width="16" 
                                         Height="16" 
                                         Margin="4 3 0 0"
-                                        CornerRadius="{DynamicResource RscRound}">
+                                        CornerRadius="8">
                                     <Image x:Name="CheckMark" Style="{StaticResource ImgCheckOk}"/>
                                 </Border>
                             </BulletDecorator.Bullet>
@@ -153,6 +151,11 @@
         <Setter Property="Background" Value="{StaticResource RgbB2}"/>
     </Style>
     <!-- /Transparent -->
+    
+    
+    <!-- INITIAL -->
+    <Style TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlain}"/>
+    <!-- /INITIAL -->
     
     
 </ResourceDictionary>

@@ -65,8 +65,6 @@
         </Setter>
     </Style>
     
-    <Style TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxPlain}"/>
-    
     <Style x:Key="CheckBoxPlainM1" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxPlain}">
         <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
@@ -218,5 +216,9 @@
     </Style>
     <!-- /Transparent -->
     
+    
+    <!-- INITIAL -->
+    <Style TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxPlain}"/>
+    <!-- /INITIAL -->
     
 </ResourceDictionary>
