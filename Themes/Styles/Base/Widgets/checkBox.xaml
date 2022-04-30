@@ -172,27 +172,27 @@
     </Style>
     
     <Style x:Key="CheckBoxTransparentM1" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxTransparent}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
+        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM1}"/>
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
     </Style>
     
     <Style x:Key="CheckBoxTransparentM2" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxTransparent}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM3}"/>
+        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
         <Setter Property="Background" Value="{StaticResource RgbM2}"/>
     </Style>
     
     <Style x:Key="CheckBoxTransparentM3" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxTransparent}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
+        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM3}"/>
         <Setter Property="Background" Value="{StaticResource RgbM3}"/>
     </Style>
     
     <Style x:Key="CheckBoxTransparentB1" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxTransparent}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM3}"/>
+        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateB1}"/>
         <Setter Property="Background" Value="{StaticResource RgbB1}"/>
     </Style>
     
     <Style x:Key="CheckBoxTransparentB2" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxTransparent}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM3}"/>
+        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateB2}"/>
         <Setter Property="Background" Value="{StaticResource RgbB2}"/>
     </Style>
     
