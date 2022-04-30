@@ -51,6 +51,7 @@
                         </Trigger>
                         
                         <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="CheckMark" Property="Visibility" Value="Collapsed"/>
                             <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource RgbOk}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
@@ -123,6 +124,7 @@
                         </Trigger>
                         
                         <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="CheckMark" Property="Visibility" Value="Collapsed"/>
                             <Setter TargetName="Border" Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Background}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
