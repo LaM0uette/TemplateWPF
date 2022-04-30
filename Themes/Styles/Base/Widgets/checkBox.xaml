@@ -120,4 +120,87 @@
     <!-- /Plain -->
     
     
+    <!-- Transparent -->
+    <Style x:Key="CheckBoxTransparent" TargetType="CheckBox" BasedOn="{StaticResource CheckBoxBase}">
+        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
+        <Setter Property="Background" Value="{StaticResource RgbM1}"/>
+        <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
+        
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBox">
+                    <Border Background="Transparent">
+                        <BulletDecorator SnapsToDevicePixels="True">
+                            <BulletDecorator.Bullet>
+                                <Border x:Name="Border" 
+                                        BorderBrush="{TemplateBinding Foreground}"
+                                        Background="{StaticResource RgbOk}"
+                                        BorderThickness="1"
+                                        Width="16" 
+                                        Height="16" 
+                                        Margin="4 3 0 0"
+                                        CornerRadius="{DynamicResource RscRound}">
+                                    <Image x:Name="CheckMark" Style="{StaticResource ImgCheckM3}"/>
+                                </Border>
+                            </BulletDecorator.Bullet>
+                            <ContentPresenter HorizontalAlignment="Left"
+                                              VerticalAlignment="Center"
+                                              Margin="8 0 0 0"
+                                              RecognizesAccessKey="True"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                        </BulletDecorator>
+                    </Border>
+                    
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="False">
+                            <Setter TargetName="CheckMark" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="Border" Property="Background" Value="Transparent"/>
+                        </Trigger>
+                        
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource RgbOk}"/>
+                        </Trigger>
+                        
+                        <Trigger Property="IsChecked" Value="{x:Null}">
+                            <Setter TargetName="Border" Property="Background" Value="Transparent"/>
+                            <Setter TargetName="CheckMark" Property="Style" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Tag}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="CheckBoxTransparentM1" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxTransparent}">
+        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
+        <Setter Property="Background" Value="{StaticResource RgbM1}"/>
+        <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
+    </Style>
+    
+    <Style x:Key="CheckBoxTransparentM2" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxTransparent}">
+        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM3}"/>
+        <Setter Property="Background" Value="{StaticResource RgbM2}"/>
+        <Setter Property="Foreground" Value="{StaticResource RgbM3}"/>
+    </Style>
+    
+    <Style x:Key="CheckBoxTransparentM3" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxTransparent}">
+        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
+        <Setter Property="Background" Value="{StaticResource RgbM3}"/>
+        <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
+    </Style>
+    
+    <Style x:Key="CheckBoxTransparentB1" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxTransparent}">
+        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM3}"/>
+        <Setter Property="Background" Value="{StaticResource RgbB1}"/>
+        <Setter Property="Foreground" Value="{StaticResource RgbM3}"/>
+    </Style>
+    
+    <Style x:Key="CheckBoxTransparentB2" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource CheckBoxTransparent}">
+        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM3}"/>
+        <Setter Property="Background" Value="{StaticResource RgbB2}"/>
+        <Setter Property="Foreground" Value="{StaticResource RgbM3}"/>
+    </Style>
+    <!-- /Transparent -->
+    
+    
 </ResourceDictionary>

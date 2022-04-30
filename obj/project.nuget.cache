@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "UUZIa7kV9k+MduIGsOHdMXniC+nZJ0luZI6hewsa4w2JFVR6w0PlcUwIoAMB07tG41AtmLZm/sT2DdBMgpYzaQ==",
+  "dgSpecHash": "Tg4PoISvdOAY8WX4rIryQMeiGVLQwalFy0Z2nZNNDLk/aVeG0jQNXxM8J+JkKOvsK6fzMmmdx6y2MAqQo+n9rg==",
   "success": true,
-  "projectFilePath": "C:\\Prog\\C#\\TemplateWPF\\TemplateWPF.csproj",
+  "projectFilePath": "D:\\Prog\\C#\\TemplateWPF\\TemplateWPF.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\XD5965\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
-    "C:\\Users\\XD5965\\.nuget\\packages\\mahapps.metro\\2.4.9\\mahapps.metro.2.4.9.nupkg.sha512",
-    "C:\\Users\\XD5965\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
-    "C:\\Users\\XD5965\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+    "C:\\Users\\doria\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
+    "C:\\Users\\doria\\.nuget\\packages\\mahapps.metro\\2.4.9\\mahapps.metro.2.4.9.nupkg.sha512",
+    "C:\\Users\\doria\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\doria\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": []
 }

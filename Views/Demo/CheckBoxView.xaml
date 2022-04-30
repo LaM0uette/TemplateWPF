@@ -24,6 +24,15 @@
                 <CheckBox Style="{StaticResource CheckBox3SPlainB1}" Width="150" Margin="5 0 5 5">Box3SPlainB1</CheckBox>
                 <CheckBox Style="{StaticResource CheckBox3SPlainB2}" Width="150" Margin="5 0 5 5">Box3SPlainB2</CheckBox>
             </StackPanel>
+            
+            <!-- Transparent -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <CheckBox Style="{StaticResource CheckBoxTransparentM1}" Width="150" Margin="5 0 5 5">BoxTransparentM1</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxTransparentM2}" Width="150" Margin="5 0 5 5">BoxTransparentM2</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxTransparentM3}" Width="150" Margin="5 0 5 5">BoxTransparentM3</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxTransparentB1}" Width="150" Margin="5 0 5 5">BoxTransparentB1</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxTransparentB2}" Width="150" Margin="5 0 5 5">BoxTransparentB2</CheckBox>
+            </StackPanel>
         </StackPanel>
         
     </Grid>
