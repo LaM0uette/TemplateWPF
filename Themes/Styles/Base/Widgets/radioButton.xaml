@@ -16,7 +16,6 @@
     
     <!-- Plain -->
     <Style x:Key="RadioButtonPlain" TargetType="RadioButton" BasedOn="{StaticResource RadioButtonBase}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
         <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
         
@@ -54,11 +53,6 @@
                         <Trigger Property="IsChecked" Value="True">
                             <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource RgbOk}"/>
                         </Trigger>
-                        
-                        <Trigger Property="IsChecked" Value="{x:Null}">
-                            <Setter TargetName="Border" Property="Background" Value="Transparent"/>
-                            <Setter TargetName="CheckMark" Property="Style" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Tag}" />
-                        </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
@@ -68,61 +62,34 @@
     <Style TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlain}"/>
     
     <Style x:Key="RadioButtonPlainM1" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlain}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
         <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
     </Style>
     
     <Style x:Key="RadioButtonPlainM2" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlain}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM3}"/>
         <Setter Property="Background" Value="{StaticResource RgbM2}"/>
         <Setter Property="Foreground" Value="{StaticResource RgbM3}"/>
     </Style>
     
     <Style x:Key="RadioButtonPlainM3" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlain}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
         <Setter Property="Background" Value="{StaticResource RgbM3}"/>
         <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
     </Style>
     
     <Style x:Key="RadioButtonPlainB1" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlain}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM3}"/>
         <Setter Property="Background" Value="{StaticResource RgbB1}"/>
         <Setter Property="Foreground" Value="{StaticResource RgbM3}"/>
     </Style>
     
     <Style x:Key="RadioButtonPlainB2" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlain}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM3}"/>
         <Setter Property="Background" Value="{StaticResource RgbB2}"/>
         <Setter Property="Foreground" Value="{StaticResource RgbM3}"/>
-    </Style>
-    
-    <!-- 3 States -->
-    <Style x:Key="RadioButton3SPlainM1" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlainM1}">
-        <Setter Property="IsThreeState" Value="True"></Setter>
-    </Style>
-    
-    <Style x:Key="RadioButton3SPlainM2" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlainM2}">
-        <Setter Property="IsThreeState" Value="True"></Setter>
-    </Style>
-    
-    <Style x:Key="RadioButton3SPlainM3" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlainM3}">
-        <Setter Property="IsThreeState" Value="True"></Setter>
-    </Style>
-    
-    <Style x:Key="RadioButton3SPlainB1" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlainB1}">
-        <Setter Property="IsThreeState" Value="True"></Setter>
-    </Style>
-    
-    <Style x:Key="RadioButton3SPlainB2" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonPlainB2}">
-        <Setter Property="IsThreeState" Value="True"></Setter>
     </Style>
     <!-- /Plain -->
     
     
     <!-- Transparent -->
     <Style x:Key="RadioButtonTransparent" TargetType="RadioButton" BasedOn="{StaticResource RadioButtonBase}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
         <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource Mode=self}, Path=Background}"/>
         
@@ -160,11 +127,6 @@
                         <Trigger Property="IsChecked" Value="True">
                             <Setter TargetName="Border" Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Background}"/>
                         </Trigger>
-                        
-                        <Trigger Property="IsChecked" Value="{x:Null}">
-                            <Setter TargetName="Border" Property="Background" Value="Transparent"/>
-                            <Setter TargetName="CheckMark" Property="Style" Value="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Tag}" />
-                        </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
@@ -172,49 +134,23 @@
     </Style>
     
     <Style x:Key="RadioButtonTransparentM1" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonTransparent}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM1}"/>
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
     </Style>
     
     <Style x:Key="RadioButtonTransparentM2" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonTransparent}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM2}"/>
         <Setter Property="Background" Value="{StaticResource RgbM2}"/>
     </Style>
     
     <Style x:Key="RadioButtonTransparentM3" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonTransparent}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateM3}"/>
         <Setter Property="Background" Value="{StaticResource RgbM3}"/>
     </Style>
     
     <Style x:Key="RadioButtonTransparentB1" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonTransparent}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateB1}"/>
         <Setter Property="Background" Value="{StaticResource RgbB1}"/>
     </Style>
     
     <Style x:Key="RadioButtonTransparentB2" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonTransparent}">
-        <Setter Property="Tag" Value="{StaticResource ImgCheckIndeterminateB2}"/>
         <Setter Property="Background" Value="{StaticResource RgbB2}"/>
-    </Style>
-    
-    <!-- 3 States -->
-    <Style x:Key="RadioButton3STransparentM1" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonTransparentM1}">
-        <Setter Property="IsThreeState" Value="True"></Setter>
-    </Style>
-    
-    <Style x:Key="RadioButton3STransparentM2" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonTransparentM2}">
-        <Setter Property="IsThreeState" Value="True"></Setter>
-    </Style>
-    
-    <Style x:Key="RadioButton3STransparentM3" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonTransparentM3}">
-        <Setter Property="IsThreeState" Value="True"></Setter>
-    </Style>
-    
-    <Style x:Key="RadioButton3STransparentB1" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonTransparentB1}">
-        <Setter Property="IsThreeState" Value="True"></Setter>
-    </Style>
-    
-    <Style x:Key="RadioButton3STransparentB2" TargetType="{x:Type RadioButton}" BasedOn="{StaticResource RadioButtonTransparentB2}">
-        <Setter Property="IsThreeState" Value="True"></Setter>
     </Style>
     <!-- /Transparent -->
     
