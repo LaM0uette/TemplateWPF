@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="TemplateWPF.Views.Demo.RadioButtonView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d">
+    <Grid>
+        
+        <StackPanel>
+            <!-- Plain -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <CheckBox Style="{StaticResource CheckBoxPlainM1}" Width="150" Margin="5 0 5 5">PlainM1</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxPlainM2}" Width="150" Margin="5 0 5 5">PlainM2</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxPlainM3}" Width="150" Margin="5 0 5 5">PlainM3</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxPlainB1}" Width="150" Margin="5 0 5 5">PlainB1</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxPlainB2}" Width="150" Margin="5 0 5 5">PlainB2</CheckBox>
+            </StackPanel>
+            <!-- Plain 3 States -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <CheckBox Style="{StaticResource CheckBox3SPlainM1}" Width="150" Margin="5 0 5 5">3SPlainM1</CheckBox>
+                <CheckBox Style="{StaticResource CheckBox3SPlainM2}" Width="150" Margin="5 0 5 5">3SPlainM2</CheckBox>
+                <CheckBox Style="{StaticResource CheckBox3SPlainM3}" Width="150" Margin="5 0 5 5">3SPlainM3</CheckBox>
+                <CheckBox Style="{StaticResource CheckBox3SPlainB1}" Width="150" Margin="5 0 5 5">3SPlainB1</CheckBox>
+                <CheckBox Style="{StaticResource CheckBox3SPlainB2}" Width="150" Margin="5 0 5 5">3SPlainB2</CheckBox>
+            </StackPanel>
+            
+            <!-- Transparent -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <CheckBox Style="{StaticResource CheckBoxTransparentM1}" Width="150" Margin="5 0 5 5">TransparentM1</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxTransparentM2}" Width="150" Margin="5 0 5 5">TransparentM2</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxTransparentM3}" Width="150" Margin="5 0 5 5">TransparentM3</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxTransparentB1}" Width="150" Margin="5 0 5 5">TransparentB1</CheckBox>
+                <CheckBox Style="{StaticResource CheckBoxTransparentB2}" Width="150" Margin="5 0 5 5">TransparentB2</CheckBox>
+            </StackPanel>
+            <!-- Transparent 3 States -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <CheckBox Style="{StaticResource CheckBox3STransparentM1}" Width="150" Margin="5 0 5 5">3STransparentM1</CheckBox>
+                <CheckBox Style="{StaticResource CheckBox3STransparentM2}" Width="150" Margin="5 0 5 5">3STransparentM2</CheckBox>
+                <CheckBox Style="{StaticResource CheckBox3STransparentM3}" Width="150" Margin="5 0 5 5">3STransparentM3</CheckBox>
+                <CheckBox Style="{StaticResource CheckBox3STransparentB1}" Width="150" Margin="5 0 5 5">3STransparentB1</CheckBox>
+                <CheckBox Style="{StaticResource CheckBox3STransparentB2}" Width="150" Margin="5 0 5 5">3STransparentB2</CheckBox>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</UserControl>

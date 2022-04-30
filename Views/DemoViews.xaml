@@ -13,6 +13,9 @@
             
             <Label Style="{StaticResource LabelDemo}" Content="CheckBox"/>
             <demoViews:CheckBoxView/>
+            
+            <Label Style="{StaticResource LabelDemo}" Content="RadioButton"/>
+            <demoViews:RadioButtonView/>
         </StackPanel>
         
     </Grid>
