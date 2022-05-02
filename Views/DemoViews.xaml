@@ -6,7 +6,6 @@
              xmlns:demoViews="clr-namespace:TemplateWPF.Views.Demo"
              mc:Ignorable="d">
     <Grid>
-        
         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
             <StackPanel Background="SlateGray" CanVerticallyScroll="True">
                 <Label Style="{StaticResource LabelDemo}" Content="Buttons"/>
