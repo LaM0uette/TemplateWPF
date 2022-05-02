@@ -103,3 +103,6 @@ D:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\TemplateWPF.csproj.CopyComplete
 D:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\radioButton.baml
 D:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\RadioButtonView.baml
 D:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\RadioButtonView.g.cs
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\radioButton.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\RadioButtonView.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\RadioButtonView.g.cs

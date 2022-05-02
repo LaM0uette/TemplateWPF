@@ -7,7 +7,7 @@
              mc:Ignorable="d">
     <Grid>
         
-        <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
             <StackPanel Background="SlateGray" CanVerticallyScroll="True">
                 <Label Style="{StaticResource LabelDemo}" Content="Buttons"/>
                 <demoViews:ButtonView/>
