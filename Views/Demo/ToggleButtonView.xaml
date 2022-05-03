@@ -24,6 +24,15 @@
                 <ToggleButton Style="{StaticResource ToggleButtonTxtB1}" Width="150" Margin="5 0 5 5">TxtB1</ToggleButton>
                 <ToggleButton Style="{StaticResource ToggleButtonTxtB2}" Width="150" Margin="5 0 5 5">TxtB2</ToggleButton>
             </StackPanel>
+            
+            <!-- Txt Inv -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <ToggleButton Style="{StaticResource ToggleButtonTxtInvM1}" Width="150" Margin="5 0 5 5">TxtInvM1</ToggleButton>
+                <ToggleButton Style="{StaticResource ToggleButtonTxtInvM2}" Width="150" Margin="5 0 5 5">TxtInvM2</ToggleButton>
+                <ToggleButton Style="{StaticResource ToggleButtonTxtInvM3}" Width="150" Margin="5 0 5 5">TxtInvM3</ToggleButton>
+                <ToggleButton Style="{StaticResource ToggleButtonTxtInvB1}" Width="150" Margin="5 0 5 5">TxtInvB1</ToggleButton>
+                <ToggleButton Style="{StaticResource ToggleButtonTxtInvB2}" Width="150" Margin="5 0 5 5">TxtInvB2</ToggleButton>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </UserControl>

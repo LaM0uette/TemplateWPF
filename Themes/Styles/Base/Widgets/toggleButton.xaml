@@ -138,6 +138,59 @@
     <!-- /Txt -->
     
     
+    <!-- Txt Inv -->
+    <Style x:Key="ToggleButtonTxtInv" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonBase}">
+        <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
+        <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}"/>
+        <Setter Property="Foreground" Value="{StaticResource RgbAll}"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderThickness="1"
+                            BorderBrush="{TemplateBinding Tag}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource Mode=self}, Path=Tag}"/>
+                        </Trigger>
+                        
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource Mode=self}, Path=Tag}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ToggleButtonTxtInvM1" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbM1}"/>
+    </Style>
+    
+    <Style x:Key="ToggleButtonTxtInvM2" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
+    </Style>
+    
+    <Style x:Key="ToggleButtonTxtInvM3" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbM3}"/>
+    </Style>
+    
+    <Style x:Key="ToggleButtonTxtInvB1" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbB1}"/>
+    </Style>
+    
+    <Style x:Key="ToggleButtonTxtInvB2" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonTxtInv}">
+        <Setter Property="Tag" Value="{StaticResource RgbB2}"/>
+    </Style>
+    <!-- /Txt Inv -->
+    
+    
     <!-- INITIAL -->
     <Style TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonPlain}"/>
     <!-- /INITIAL -->
