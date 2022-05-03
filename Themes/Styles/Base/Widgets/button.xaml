@@ -35,11 +35,11 @@
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
         <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}"/>
         
-        <Setter Property="Effect">
-            <Setter.Value>
-                <DropShadowEffect Color="#FF242424" Direction="320" ShadowDepth="3" BlurRadius="4" Opacity="0.1" />
-            </Setter.Value>
-        </Setter>
+        <!-- <Setter Property="Effect"> -->
+        <!--     <Setter.Value> -->
+        <!--         <DropShadowEffect Color="#FF242424" Direction="320" ShadowDepth="3" BlurRadius="4" Opacity="0.1" /> -->
+        <!--     </Setter.Value> -->
+        <!-- </Setter> -->
 
         <Setter Property="Template">
             <Setter.Value>
