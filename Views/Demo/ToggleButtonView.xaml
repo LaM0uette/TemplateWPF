@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="TemplateWPF.Views.Demo.ToggleButtonView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d">
+    <Grid>
+        
+        <StackPanel>
+            <!-- Plain -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <RadioButton Style="{StaticResource RadioButtonPlainM1}" Width="150" Margin="5 0 5 5">PlainM1</RadioButton>
+                <RadioButton Style="{StaticResource RadioButtonPlainM2}" Width="150" Margin="5 0 5 5">PlainM2</RadioButton>
+                <RadioButton Style="{StaticResource RadioButtonPlainM3}" Width="150" Margin="5 0 5 5">PlainM3</RadioButton>
+                <RadioButton Style="{StaticResource RadioButtonPlainB1}" Width="150" Margin="5 0 5 5">PlainB1</RadioButton>
+                <RadioButton Style="{StaticResource RadioButtonPlainB2}" Width="150" Margin="5 0 5 5">PlainB2</RadioButton>
+            </StackPanel>
+            
+            <!-- Transparent -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <RadioButton Style="{StaticResource RadioButtonTransparentM1}" Width="150" Margin="5 0 5 5">TransparentM1</RadioButton>
+                <RadioButton Style="{StaticResource RadioButtonTransparentM2}" Width="150" Margin="5 0 5 5">TransparentM2</RadioButton>
+                <RadioButton Style="{StaticResource RadioButtonTransparentM3}" Width="150" Margin="5 0 5 5">TransparentM3</RadioButton>
+                <RadioButton Style="{StaticResource RadioButtonTransparentB1}" Width="150" Margin="5 0 5 5">TransparentB1</RadioButton>
+                <RadioButton Style="{StaticResource RadioButtonTransparentB2}" Width="150" Margin="5 0 5 5">TransparentB2</RadioButton>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</UserControl>

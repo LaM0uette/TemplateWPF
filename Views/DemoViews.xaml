@@ -11,6 +11,9 @@
                 <Label Style="{StaticResource LabelDemo}" Content="Buttons"/>
                 <demoViews:ButtonView/>
             
+                <Label Style="{StaticResource LabelDemo}" Content="ToggleButton"/>
+                <demoViews:ToggleButtonView/>
+            
                 <Label Style="{StaticResource LabelDemo}" Content="CheckBox"/>
                 <demoViews:CheckBoxView/>
             
