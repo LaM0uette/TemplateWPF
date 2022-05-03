@@ -10,39 +10,78 @@
                 <Setter Property="CornerRadius" Value="{DynamicResource RscRound}"></Setter>
             </Style>
         </Style.Resources>
+        
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="ToggleButton.MouseEnter">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimation Storyboard.TargetProperty="(ToggleButton.Opacity)" From="0.5" To="1" Duration="0:0:0.2" FillBehavior="Stop"/> 
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Opacity" Value="0.4"/>
+            </Trigger>
+            
+        </Style.Triggers>
     </Style>
     <!-- /Base -->
     
     
     <!-- Plain -->
     <Style x:Key="ToggleButtonPlain" TargetType="ToggleButton" BasedOn="{StaticResource ToggleButtonBase}">
+        <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
-        <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
+        <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}"/>
+        
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect Color="#FF242424" Direction="320" ShadowDepth="3" BlurRadius="4" Opacity="0.1" />
+            </Setter.Value>
+        </Setter>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Border Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=self}, Path=Tag}"/>
+                            <Setter Property="Foreground" Value="{StaticResource RgbAll}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
     
     <Style x:Key="ToggleButtonPlainM1" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonPlain}">
         <Setter Property="Background" Value="{StaticResource RgbM1}"/>
-        <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
+        <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
     </Style>
     
     <Style x:Key="ToggleButtonPlainM2" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonPlain}">
         <Setter Property="Background" Value="{StaticResource RgbM2}"/>
-        <Setter Property="Foreground" Value="{StaticResource RgbM3}"/>
+        <Setter Property="Tag" Value="{StaticResource RgbM3}"/>
     </Style>
     
     <Style x:Key="ToggleButtonPlainM3" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonPlain}">
         <Setter Property="Background" Value="{StaticResource RgbM3}"/>
-        <Setter Property="Foreground" Value="{StaticResource RgbM2}"/>
+        <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
     </Style>
     
     <Style x:Key="ToggleButtonPlainB1" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonPlain}">
         <Setter Property="Background" Value="{StaticResource RgbB1}"/>
-        <Setter Property="Foreground" Value="{StaticResource RgbM3}"/>
+        <Setter Property="Tag" Value="{StaticResource RgbM3}"/>
     </Style>
     
     <Style x:Key="ToggleButtonPlainB2" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonPlain}">
         <Setter Property="Background" Value="{StaticResource RgbB2}"/>
-        <Setter Property="Foreground" Value="{StaticResource RgbM3}"/>
+        <Setter Property="Tag" Value="{StaticResource RgbM3}"/>
     </Style>
     <!-- /Plain -->
     

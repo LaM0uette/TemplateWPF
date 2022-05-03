@@ -10,8 +10,11 @@
             <!-- Plain -->
             <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
                 <ToggleButton Style="{StaticResource ToggleButtonPlainM1}" Width="150" Margin="5 0 5 5">PlainM1</ToggleButton>
+                <ToggleButton Style="{StaticResource ToggleButtonPlainM2}" Width="150" Margin="5 0 5 5">PlainM2</ToggleButton>
+                <ToggleButton Style="{StaticResource ToggleButtonPlainM3}" Width="150" Margin="5 0 5 5">PlainM3</ToggleButton>
+                <ToggleButton Style="{StaticResource ToggleButtonPlainB1}" Width="150" Margin="5 0 5 5">PlainB1</ToggleButton>
+                <ToggleButton Style="{StaticResource ToggleButtonPlainB2}" Width="150" Margin="5 0 5 5">PlainB2</ToggleButton>
             </StackPanel>
         </StackPanel>
-        
     </Grid>
 </UserControl>
