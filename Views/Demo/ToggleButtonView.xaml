@@ -15,6 +15,15 @@
                 <ToggleButton Style="{StaticResource ToggleButtonPlainB1}" Width="150" Margin="5 0 5 5">PlainB1</ToggleButton>
                 <ToggleButton Style="{StaticResource ToggleButtonPlainB2}" Width="150" Margin="5 0 5 5">PlainB2</ToggleButton>
             </StackPanel>
+            
+            <!-- Txt -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <ToggleButton Style="{StaticResource ToggleButtonTxtM1}" Width="150" Margin="5 0 5 5">TxtM1</ToggleButton>
+                <ToggleButton Style="{StaticResource ToggleButtonTxtM2}" Width="150" Margin="5 0 5 5">TxtM2</ToggleButton>
+                <ToggleButton Style="{StaticResource ToggleButtonTxtM3}" Width="150" Margin="5 0 5 5">TxtM3</ToggleButton>
+                <ToggleButton Style="{StaticResource ToggleButtonTxtB1}" Width="150" Margin="5 0 5 5">TxtB1</ToggleButton>
+                <ToggleButton Style="{StaticResource ToggleButtonTxtB2}" Width="150" Margin="5 0 5 5">TxtB2</ToggleButton>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </UserControl>

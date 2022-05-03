@@ -47,6 +47,11 @@
                             <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=self}, Path=Tag}"/>
                             <Setter Property="Foreground" Value="{StaticResource RgbAll}"/>
                         </Trigger>
+                        
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=self}, Path=Tag}"/>
+                            <Setter Property="Foreground" Value="{StaticResource RgbAll}"/>
+                        </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
@@ -78,6 +83,59 @@
         <Setter Property="Tag" Value="{StaticResource RgbM3}"/>
     </Style>
     <!-- /Plain -->
+    
+    
+    <!-- Txt -->
+    <Style x:Key="ToggleButtonTxt" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonBase}">
+        <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{Binding RelativeSource={RelativeSource Self}, Path=Tag}"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderThickness="1"
+                            BorderBrush="{TemplateBinding Tag}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=self}, Path=Tag}"/>
+                            <Setter Property="Foreground" Value="{StaticResource RgbAll}"/>
+                        </Trigger>
+                        
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Mode=self}, Path=Tag}"/>
+                            <Setter Property="Foreground" Value="{StaticResource RgbAll}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="ToggleButtonTxtM1" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonTxt}">
+        <Setter Property="Tag" Value="{StaticResource RgbM1}"/>
+    </Style>
+    
+    <Style x:Key="ToggleButtonTxtM2" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonTxt}">
+        <Setter Property="Tag" Value="{StaticResource RgbM2}"/>
+    </Style>
+    
+    <Style x:Key="ToggleButtonTxtM3" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonTxt}">
+        <Setter Property="Tag" Value="{StaticResource RgbM3}"/>
+    </Style>
+    
+    <Style x:Key="ToggleButtonTxtB1" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonTxt}">
+        <Setter Property="Tag" Value="{StaticResource RgbB1}"/>
+    </Style>
+    
+    <Style x:Key="ToggleButtonTxtB2" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource ToggleButtonTxt}">
+        <Setter Property="Tag" Value="{StaticResource RgbB2}"/>
+    </Style>
+    <!-- /Txt -->
     
     
     <!-- INITIAL -->
