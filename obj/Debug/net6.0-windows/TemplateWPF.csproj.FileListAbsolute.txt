@@ -108,3 +108,4 @@ C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\RadioButtonView.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\RadioButtonView.g.cs
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\ToggleButtonView.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\ToggleButtonView.g.cs
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\toggleButton.baml
