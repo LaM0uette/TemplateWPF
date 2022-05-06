@@ -2,6 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <!-- Base -->
     <Style x:Key="ComboBoxBase" TargetType="{x:Type ComboBox}">
+        <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst" />
         <Setter Property="Height" Value="{StaticResource WgHeight}"/>
         <Setter Property="Cursor" Value="Hand"/>
         
@@ -23,7 +24,31 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ComboBox">
-                    
+                    <Grid>
+                        <Border x:Name="ToggleTemplateRoot"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Padding="{TemplateBinding Padding}">
+                            <Border x:Name="splitBorder"
+                                    Margin="0"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Center"
+                                    BorderBrush="Transparent"
+                                    BorderThickness="0">
+                                <Path x:Name="arrow"
+                                      Width="15"
+                                      Height="15"
+                                      Margin="0"
+                                      Stretch="Uniform"
+                                      HorizontalAlignment="Right"
+                                      VerticalAlignment="Center"
+                                      Data="M7,10L12,15L17,10H7Z"
+                                      Fill="{TemplateBinding BorderBrush}"
+                                      RenderTransformOrigin="0.5,0.5" />
+                            </Border>
+                        </Border>
+                    </Grid>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

@@ -3,13 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             Loaded="ComboBoxView_OnLoaded"
              mc:Ignorable="d">
     <Grid>
         
         <StackPanel>
             <!-- Plain -->
             <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
-                <ComboBox Style="{StaticResource ComboBoxPlainM1}" Width="150" Margin="5 0 5 5">PlainM1</ComboBox>
+                <ComboBox x:Name="ComboBoxPlainM1" Style="{StaticResource ComboBoxPlainM1}" Width="150" Margin="5 0 5 5">PlainM1</ComboBox>
                 <ComboBox Style="{StaticResource ComboBoxPlainM2}" Width="150" Margin="5 0 5 5">PlainM2</ComboBox>
                 <ComboBox Style="{StaticResource ComboBoxPlainM3}" Width="150" Margin="5 0 5 5">PlainM3</ComboBox>
                 <ComboBox Style="{StaticResource ComboBoxPlainB1}" Width="150" Margin="5 0 5 5">PlainB1</ComboBox>
