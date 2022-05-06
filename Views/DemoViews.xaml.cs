@@ -7,6 +7,5 @@ public partial class DemoViews : UserControl
     public DemoViews()
     {
         InitializeComponent();
-        
     }
 }
