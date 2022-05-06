@@ -9,7 +9,11 @@
         <StackPanel>
             <!-- Plain -->
             <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
-                <CheckBox Style="{StaticResource CheckBoxPlainM1}" Width="150" Margin="5 0 5 5">PlainM1</CheckBox>
+                <ComboBox Style="{StaticResource ComboBoxPlainM1}" Width="150" Margin="5 0 5 5">PlainM1</ComboBox>
+                <ComboBox Style="{StaticResource ComboBoxPlainM2}" Width="150" Margin="5 0 5 5">PlainM2</ComboBox>
+                <ComboBox Style="{StaticResource ComboBoxPlainM3}" Width="150" Margin="5 0 5 5">PlainM3</ComboBox>
+                <ComboBox Style="{StaticResource ComboBoxPlainB1}" Width="150" Margin="5 0 5 5">PlainB1</ComboBox>
+                <ComboBox Style="{StaticResource ComboBoxPlainB2}" Width="150" Margin="5 0 5 5">PlainB2</ComboBox>
             </StackPanel>
         </StackPanel>
         
