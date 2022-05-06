@@ -19,6 +19,9 @@
             
                 <Label Style="{StaticResource LabelDemo}" Content="RadioButton"/>
                 <demoViews:RadioButtonView/>
+            
+                <Label Style="{StaticResource LabelDemo}" Content="ComboBox"/>
+                <demoViews:ComboBoxView/>
             </StackPanel>
         </ScrollViewer>
     </Grid>
