@@ -111,8 +111,7 @@
                             <Setter Property="FrameworkElement.MinHeight" TargetName="DropDownBorder" Value="95" />
                         </Trigger>
                         <Trigger Property="UIElement.IsEnabled" Value="False">
-                            <Setter Property="TextElement.Foreground"
-                                    Value="{StaticResource ComboBoxDisabledForegroundBrush}" />
+                            <Setter Property="TextElement.Foreground" Value="{StaticResource ComboBoxDisabledForegroundBrush}" />
                         </Trigger>
                         <Trigger Property="ItemsControl.IsGrouping" Value="True">
                             <Setter Property="ScrollViewer.CanContentScroll" Value="False" />
