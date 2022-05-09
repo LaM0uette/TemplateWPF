@@ -15,5 +15,6 @@ public partial class ComboBoxView : UserControl
         ComboBoxPlainM1.Items.Insert(0, "Alice");
         ComboBoxPlainM1.Items.Insert(1, "Bob");
         ComboBoxPlainM1.Items.Insert(2, "Charlie");
+        ComboBoxPlainM1.Items.Insert(3, "Charlie Charlie Charlie Charlie Charlie Charlie");
     }
-}
+} 
