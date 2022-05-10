@@ -223,7 +223,9 @@
     
     
     
-    
-    
+    <!-- TODO: A modifier ! -->
+    <Style TargetType="{x:Type DatePicker}">
+        
+    </Style>
 
 </ResourceDictionary>
