@@ -5,7 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:demoViews="clr-namespace:TemplateWPF.Views.Demo"
              mc:Ignorable="d">
-    <Grid>
+    
+    <Grid Background="SlateGray">
         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
             <StackPanel Background="SlateGray" CanVerticallyScroll="True">
                 <Label Style="{StaticResource LabelDemo}" Content="Buttons"/>

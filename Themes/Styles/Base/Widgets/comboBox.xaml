@@ -386,15 +386,15 @@
 
         <ControlTemplate.Triggers>
             <Trigger Property="UIElement.IsMouseOver" Value="True">
-                <Setter Property="Fill" TargetName="Arrow" Value="{StaticResource RgbB1}"/>
+                <Setter Property="Fill" TargetName="Arrow" Value="{StaticResource RgbM1}"/>
             </Trigger>
             <Trigger Property="ToggleButton.IsChecked" Value="True">
-                <Setter Property="Fill" TargetName="Arrow" Value="{StaticResource RgbB1}"/>
+                <Setter Property="Fill" TargetName="Arrow" Value="{StaticResource RgbM1}"/>
             </Trigger>
             <Trigger Property="UIElement.IsEnabled" Value="False">
                 <Setter Property="Panel.Background" TargetName="Border" Value="{StaticResource RgbB1}" />
                 <Setter Property="TextElement.Foreground" Value="{StaticResource RgbM3}" />
-                <Setter Property="Fill" TargetName="Arrow" Value="{StaticResource RgbB1}"/>
+                <Setter Property="Fill" TargetName="Arrow" Value="{StaticResource RgbM1}"/>
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
@@ -500,15 +500,15 @@
 
         <ControlTemplate.Triggers>
             <Trigger Property="UIElement.IsMouseOver" Value="True">
-                <Setter Property="Fill" TargetName="Arrow" Value="{StaticResource RgbB2}"/>
+                <Setter Property="Fill" TargetName="Arrow" Value="{StaticResource RgbM1}"/>
             </Trigger>
             <Trigger Property="ToggleButton.IsChecked" Value="True">
-                <Setter Property="Fill" TargetName="Arrow" Value="{StaticResource RgbB2}"/>
+                <Setter Property="Fill" TargetName="Arrow" Value="{StaticResource RgbM1}"/>
             </Trigger>
             <Trigger Property="UIElement.IsEnabled" Value="False">
                 <Setter Property="Panel.Background" TargetName="Border" Value="{StaticResource RgbB2}" />
                 <Setter Property="TextElement.Foreground" Value="{StaticResource RgbM3}" />
-                <Setter Property="Fill" TargetName="Arrow" Value="{StaticResource RgbB2}"/>
+                <Setter Property="Fill" TargetName="Arrow" Value="{StaticResource RgbM1}"/>
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
