@@ -13,7 +13,7 @@ public partial class ComboBoxView : UserControl
 
     private void ComboBoxView_OnLoaded(object sender, RoutedEventArgs e)
     {
-        string[] items = new string[5]{ "Mumbai", "London", "New York", "Paris", "Colombo" };
+        string[] items = { "Mumbai", "London", "New York", "Paris", "Colombo" };
 
         int i = 0;
         foreach (var item in items)

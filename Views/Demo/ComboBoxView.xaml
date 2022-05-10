@@ -10,11 +10,11 @@
         <StackPanel>
             <!-- Plain -->
             <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
-                <ComboBox x:Name="ComboBoxPlainM1" Style="{StaticResource ComboBoxPlainM1}" Width="150" Margin="5 0 5 5">PlainM1</ComboBox>
-                <ComboBox x:Name="ComboBoxPlainM2" Style="{StaticResource ComboBoxPlainM2}" Width="150" Margin="5 0 5 5">PlainM2</ComboBox>
-                <ComboBox x:Name="ComboBoxPlainM3" Style="{StaticResource ComboBoxPlainM3}" Width="150" Margin="5 0 5 5">PlainM3</ComboBox>
-                <ComboBox x:Name="ComboBoxPlainB1" Style="{StaticResource ComboBoxPlainB1}" Width="150" Margin="5 0 5 5">PlainB1</ComboBox>
-                <ComboBox x:Name="ComboBoxPlainB2" Style="{StaticResource ComboBoxPlainB2}" Width="150" Margin="5 0 5 5">PlainB2</ComboBox>
+                <ComboBox x:Name="ComboBoxPlainM1" Style="{StaticResource ComboBoxPlainM1}" Width="150" Margin="5 0 5 5"></ComboBox>
+                <ComboBox x:Name="ComboBoxPlainM2" Style="{StaticResource ComboBoxPlainM2}" Width="150" Margin="5 0 5 5"></ComboBox>
+                <ComboBox x:Name="ComboBoxPlainM3" Style="{StaticResource ComboBoxPlainM3}" Width="150" Margin="5 0 5 5"></ComboBox>
+                <ComboBox x:Name="ComboBoxPlainB1" Style="{StaticResource ComboBoxPlainB1}" Width="150" Margin="5 0 5 5"></ComboBox>
+                <ComboBox x:Name="ComboBoxPlainB2" Style="{StaticResource ComboBoxPlainB2}" Width="150" Margin="5 0 5 5"></ComboBox>
             </StackPanel>
         </StackPanel>
         
