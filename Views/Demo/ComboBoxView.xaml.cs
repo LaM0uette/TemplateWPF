@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace TemplateWPF.Views.Demo;
@@ -12,9 +13,17 @@ public partial class ComboBoxView : UserControl
 
     private void ComboBoxView_OnLoaded(object sender, RoutedEventArgs e)
     {
-        ComboBoxPlainM1.Items.Insert(0, "Alice");
-        ComboBoxPlainM1.Items.Insert(1, "Bob");
-        ComboBoxPlainM1.Items.Insert(2, "Charlie");
-        ComboBoxPlainM1.Items.Insert(3, "Charlie Charlie Charlie Charlie Charlie Charlie");
+        string[] items = new string[5]{ "Mumbai", "London", "New York", "Paris", "Colombo" };
+
+        int i = 0;
+        foreach (var item in items)
+        {
+            ComboBoxPlainM1.Items.Insert(i, item);
+            ComboBoxPlainM2.Items.Insert(i, item);
+            ComboBoxPlainM3.Items.Insert(i, item);
+            ComboBoxPlainB1.Items.Insert(i, item);
+            ComboBoxPlainB2.Items.Insert(i, item);
+            i++;
+        }
     }
 } 
