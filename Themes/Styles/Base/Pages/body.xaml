@@ -42,7 +42,7 @@
     
     
     
-    
+    <!-- TODO: A modifier ! -->
     <SolidColorBrush x:Key="StandardBorderBrush" Color="#888" />
     <SolidColorBrush x:Key="StandardBackgroundBrush" Color="Black" />
     <SolidColorBrush x:Key="HoverBorderBrush" Color="#DDD" />
