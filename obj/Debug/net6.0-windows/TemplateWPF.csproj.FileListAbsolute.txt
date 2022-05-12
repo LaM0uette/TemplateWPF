@@ -112,3 +112,6 @@ C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\toggl
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\ComboBoxView.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\ComboBoxView.g.cs
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\comboBox.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\label.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\LabelView.baml
+C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\LabelView.g.cs

@@ -9,8 +9,15 @@
     <Grid Background="SlateGray">
         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
             <StackPanel Background="SlateGray" CanVerticallyScroll="True">
+            
+                <Label Style="{StaticResource LabelDemo}" Content="Label"/>
+                <demoViews:LabelView/>
+                
                 <Label Style="{StaticResource LabelDemo}" Content="Buttons"/>
                 <demoViews:ButtonView/>
+            
+                <Label Style="{StaticResource LabelDemo}" Content="ComboBox"/>
+                <demoViews:ComboBoxView/>
             
                 <Label Style="{StaticResource LabelDemo}" Content="ToggleButton"/>
                 <demoViews:ToggleButtonView/>
@@ -20,9 +27,6 @@
             
                 <Label Style="{StaticResource LabelDemo}" Content="RadioButton"/>
                 <demoViews:RadioButtonView/>
-            
-                <Label Style="{StaticResource LabelDemo}" Content="ComboBox"/>
-                <demoViews:ComboBoxView/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

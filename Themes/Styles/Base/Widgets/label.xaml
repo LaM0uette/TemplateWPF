@@ -12,90 +12,32 @@
 
 
     <!-- Plain -->
-    <Style x:Key="LabelPlainM1" TargetType="Label" BasedOn="{StaticResource LabelBase}">
+    <Style x:Key="LabelPlain" TargetType="Label" BasedOn="{StaticResource LabelBase}">
         <Setter Property="Background" Value="{StaticResource RgbM1}" />
         <Setter Property="Foreground" Value="{StaticResource RgbM2}" />
-
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="ComboBox">
-                    <Grid>
-                        <ToggleButton Name="ToggleButton"
-                                      ClickMode="Press" Focusable="False"
-                                      IsChecked="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"
-                                      Template="{StaticResource ComboBoxPlainM1ControlTemplate}"/>
-                        <ContentPresenter Name="ContentSite" Margin="5, 3, 25, 3" IsHitTestVisible="False"
-                                          HorizontalAlignment="Left" VerticalAlignment="Center"
-                                          Content="{TemplateBinding ComboBox.SelectionBoxItem}"
-                                          ContentTemplate="{TemplateBinding ComboBox.SelectionBoxItemTemplate}"
-                                          ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" />
-                        <TextBox Name="PART_EditableTextBox" Margin="5, 3, 25, 3"
-                                 IsReadOnly="{TemplateBinding IsReadOnly}"
-                                 Visibility="Hidden" Background="Transparent"
-                                 HorizontalAlignment="Left" VerticalAlignment="Center"
-                                 Focusable="True">
-                            <TextBox.Template>
-                                <ControlTemplate TargetType="TextBox">
-                                    <Border Name="PART_ContentHost" Focusable="False" />
-                                </ControlTemplate>
-                            </TextBox.Template>
-                        </TextBox>
-
-                        <Popup Name="Popup" Placement="Bottom"
-                               Focusable="False" AllowsTransparency="True"
-                               IsOpen="{TemplateBinding ComboBox.IsDropDownOpen}"
-                               PopupAnimation="Slide">
-                            <Grid Name="DropDown" SnapsToDevicePixels="True"
-                                  MinWidth="{TemplateBinding FrameworkElement.ActualWidth}"
-                                  MaxHeight="{TemplateBinding ComboBox.MaxDropDownHeight}">
-                                <Border Name="DropDownBorder" Background="{StaticResource RgbM1}" Margin="0, 2, 0, 0"
-                                        BorderThickness="1,1,1,1"
-                                        BorderBrush="{StaticResource RgbM2}" />
-                                <ScrollViewer Margin="4" SnapsToDevicePixels="True">
-                                    <ItemsPresenter KeyboardNavigation.DirectionalNavigation="Contained" />
-                                </ScrollViewer>
-                            </Grid>
-                        </Popup>
-                    </Grid>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="ItemsControl.HasItems" Value="False">
-                            <Setter Property="FrameworkElement.MinHeight" TargetName="DropDownBorder" Value="95" />
-                        </Trigger>
-                        <Trigger Property="ItemsControl.IsGrouping" Value="True">
-                            <Setter Property="ScrollViewer.CanContentScroll" Value="False" />
-                        </Trigger>
-                        <Trigger Property="ComboBox.IsEditable" Value="True">
-                            <Setter Property="KeyboardNavigation.IsTabStop" Value="False" />
-                            <Setter Property="UIElement.Visibility" TargetName="PART_EditableTextBox" Value="Visible" />
-                            <Setter Property="UIElement.Visibility" TargetName="ContentSite" Value="Hidden" />
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
     </Style>
     
-    <Style x:Key="ComboBoxPlainM1" TargetType="{x:Type ComboBox}" BasedOn="{StaticResource ComboBoxPlainM1Template}">
+    <Style x:Key="LabelPlainM1" TargetType="{x:Type Label}" BasedOn="{StaticResource LabelPlain}">
         <Setter Property="Background" Value="{StaticResource RgbM1}" />
         <Setter Property="Foreground" Value="{StaticResource RgbM2}" />
     </Style>
 
-    <Style x:Key="ComboBoxPlainM2" TargetType="{x:Type ComboBox}" BasedOn="{StaticResource ComboBoxPlainM2Template}">
+    <Style x:Key="LabelPlainM2" TargetType="{x:Type Label}" BasedOn="{StaticResource LabelPlain}">
         <Setter Property="Background" Value="{StaticResource RgbM2}" />
         <Setter Property="Foreground" Value="{StaticResource RgbM3}" />
     </Style>
 
-    <Style x:Key="ComboBoxPlainM3" TargetType="{x:Type ComboBox}" BasedOn="{StaticResource ComboBoxPlainM3Template}">
+    <Style x:Key="LabelPlainM3" TargetType="{x:Type Label}" BasedOn="{StaticResource LabelPlain}">
         <Setter Property="Background" Value="{StaticResource RgbM3}" />
         <Setter Property="Foreground" Value="{StaticResource RgbM2}" />
     </Style>
 
-    <Style x:Key="ComboBoxPlainB1" TargetType="{x:Type ComboBox}" BasedOn="{StaticResource ComboBoxPlainB1Template}">
+    <Style x:Key="LabelPlainB1" TargetType="{x:Type Label}" BasedOn="{StaticResource LabelPlain}">
         <Setter Property="Background" Value="{StaticResource RgbB1}" />
         <Setter Property="Foreground" Value="{StaticResource RgbM3}" />
     </Style>
 
-    <Style x:Key="ComboBoxPlainB2" TargetType="{x:Type ComboBox}" BasedOn="{StaticResource ComboBoxPlainB2Template}">
+    <Style x:Key="LabelPlainB2" TargetType="{x:Type Label}" BasedOn="{StaticResource LabelPlain}">
         <Setter Property="Background" Value="{StaticResource RgbB2}" />
         <Setter Property="Foreground" Value="{StaticResource RgbM3}" />
     </Style>
@@ -103,7 +45,7 @@
 
 
     <!-- INITIAL -->
-    <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource ComboBoxPlainM1Template}" />
+    <Style TargetType="{x:Type Label}" BasedOn="{StaticResource LabelPlainM1}" />
     <!-- /INITIAL -->
 
 

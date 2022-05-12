@@ -12,6 +12,8 @@
         <ResourceDictionary Source="/Themes/Styles/Base/Rsc/rsc.xaml"/>
         
         <!-- Widgets -->
+        <ResourceDictionary Source="/Themes/Styles/Base/Widgets/label.xaml"/>
+        
         <ResourceDictionary Source="/Themes/Styles/Base/Widgets/button.xaml"/>
         <ResourceDictionary Source="/Themes/Styles/Base/Widgets/checkBox.xaml"/>
         <ResourceDictionary Source="/Themes/Styles/Base/Widgets/radioButton.xaml"/>
