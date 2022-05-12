@@ -51,23 +51,23 @@
     </Style>
     
     <Style x:Key="LabelTransparentM1" TargetType="{x:Type Label}" BasedOn="{StaticResource LabelTransparent}">
-        <Setter Property="Foreground" Value="{StaticResource RgbM2}" />
+        <Setter Property="Foreground" Value="{StaticResource RgbM1}" />
     </Style>
 
     <Style x:Key="LabelTransparentM2" TargetType="{x:Type Label}" BasedOn="{StaticResource LabelTransparent}">
-        <Setter Property="Foreground" Value="{StaticResource RgbM3}" />
-    </Style>
-
-    <Style x:Key="LabelTransparentM3" TargetType="{x:Type Label}" BasedOn="{StaticResource LabelTransparent}">
         <Setter Property="Foreground" Value="{StaticResource RgbM2}" />
     </Style>
 
-    <Style x:Key="LabelTransparentB1" TargetType="{x:Type Label}" BasedOn="{StaticResource LabelTransparent}">
+    <Style x:Key="LabelTransparentM3" TargetType="{x:Type Label}" BasedOn="{StaticResource LabelTransparent}">
         <Setter Property="Foreground" Value="{StaticResource RgbM3}" />
     </Style>
 
+    <Style x:Key="LabelTransparentB1" TargetType="{x:Type Label}" BasedOn="{StaticResource LabelTransparent}">
+        <Setter Property="Foreground" Value="{StaticResource RgbB1}" />
+    </Style>
+
     <Style x:Key="LabelTransparentB2" TargetType="{x:Type Label}" BasedOn="{StaticResource LabelTransparent}">
-        <Setter Property="Foreground" Value="{StaticResource RgbM3}" />
+        <Setter Property="Foreground" Value="{StaticResource RgbB2}" />
     </Style>
     <!-- /Transparent -->
 
