@@ -9,11 +9,20 @@
         <StackPanel>
             <!-- Plain -->
             <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
-                <Label Style="{StaticResource LabelPlainM1}" Width="150" Margin="5 0 5 5"></Label>
-                <Label Style="{StaticResource LabelPlainM2}" Width="150" Margin="5 0 5 5"></Label>
-                <Label Style="{StaticResource LabelPlainM3}" Width="150" Margin="5 0 5 5"></Label>
-                <Label Style="{StaticResource LabelPlainB1}" Width="150" Margin="5 0 5 5"></Label>
-                <Label Style="{StaticResource LabelPlainB2}" Width="150" Margin="5 0 5 5"></Label>
+                <Label Style="{StaticResource LabelPlainM1}" Width="150" Margin="5 0 5 5">PlainM1</Label>
+                <Label Style="{StaticResource LabelPlainM2}" Width="150" Margin="5 0 5 5">PlainM2</Label>
+                <Label Style="{StaticResource LabelPlainM3}" Width="150" Margin="5 0 5 5">PlainM3</Label>
+                <Label Style="{StaticResource LabelPlainB1}" Width="150" Margin="5 0 5 5">PlainB1</Label>
+                <Label Style="{StaticResource LabelPlainB2}" Width="150" Margin="5 0 5 5">PlainB2</Label>
+            </StackPanel>
+            
+            <!-- Transparent -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <Label Style="{StaticResource LabelTransparentM1}" Width="150" Margin="5 0 5 5">TransparentM1</Label>
+                <Label Style="{StaticResource LabelTransparentM2}" Width="150" Margin="5 0 5 5">TransparentM2</Label>
+                <Label Style="{StaticResource LabelTransparentM3}" Width="150" Margin="5 0 5 5">TransparentM3</Label>
+                <Label Style="{StaticResource LabelTransparentB1}" Width="150" Margin="5 0 5 5">TransparentB1</Label>
+                <Label Style="{StaticResource LabelTransparentB2}" Width="150" Margin="5 0 5 5">TransparentB2</Label>
             </StackPanel>
         </StackPanel>
         
