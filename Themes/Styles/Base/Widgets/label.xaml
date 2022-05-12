@@ -45,7 +45,7 @@
 
 
     <!-- Transparent -->
-    <Style x:Key="LabelTransparent" TargetType="Label" BasedOn="{StaticResource LabelTransparent}">
+    <Style x:Key="LabelTransparent" TargetType="Label" BasedOn="{StaticResource LabelBase}">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Foreground" Value="{StaticResource RgbM2}" />
     </Style>
