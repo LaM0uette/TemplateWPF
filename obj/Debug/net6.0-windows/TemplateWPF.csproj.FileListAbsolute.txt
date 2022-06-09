@@ -115,3 +115,12 @@ C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\combo
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\label.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\LabelView.baml
 C:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\LabelView.g.cs
+D:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\comboBox.baml
+D:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\label.baml
+D:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Themes\Styles\Base\Widgets\toggleButton.baml
+D:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\ComboBoxView.baml
+D:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\LabelView.baml
+D:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\ToggleButtonView.baml
+D:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\ComboBoxView.g.cs
+D:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\LabelView.g.cs
+D:\Prog\C#\TemplateWPF\obj\Debug\net6.0-windows\Views\Demo\ToggleButtonView.g.cs
